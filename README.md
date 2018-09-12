@@ -84,7 +84,21 @@ ACID(원자성, 일관성, 고립성, 지속성)는 데이터베이스 트랜잭
 ### ※ NoSQL Database
 * NoSQL 데이터베이스는 단순 검색 및 추가 작업을 위한 매우 최적화된 키 값 저장 공간으로, 레이턴시와 스루풋과 관련하여 상당한 성능 이익을 내는 것이 목적이다. NoSQL 데이터베이스는 빅데이터와 실시간 웹 애플리케이션의 상업적 이용에 널리 쓰인다. 또, NoSQL 시스템은 SQL 계열 쿼리 언어를 사용할 수 있다는 사실을 강조한다는 면에서 "Not only SQL"로 불리기도 한다.
 
-* NoSQL 데이터베이스는 특정 데이터 모델에 대해 특정 목적에 맞추어 구축되는 데이터베이스로서 현대적인 애플리케이션 구축을 위한 유연한 스키마를 갖추고 있습니다. NoSQL 데이터베이스는 개발의 용이성, 기능성 및 확장성을 널리 인정받고 있습니다. 문서, 그래프, 키 값, 인 메모리, 검색을 포함해 다양한 데이터 모델을 사용합니다. 
+* NoSQL 데이터베이스는 특정 데이터 모델에 대해 특정 목적에 맞추어 구축되는 데이터베이스로서 현대적인 애플리케이션 구축을 위한 유연한 스키마를 갖추고 있습니다. NoSQL 데이터베이스는 개발의 용이성, 기능성 및 확장성을 널리 인정받고 있습니다. 문서, 그래프, 키 값, 인 메모리, 검색을 포함해 다양한 데이터 모델을 사용합니다.
+
+#### # NoSQL CAP theory
+
+<p align="center">
+ <img src="https://media.licdn.com/dms/image/C5112AQGA-kKdKwRMTA/article-inline_image-shrink_1000_1488/0?e=1541635200&v=beta&t=gIk232eRJkR1dJJvF2qUAJ__gghOdd8A4nnmIMHffsQ" />
+</p>
+
+* 일관성(Consistency): 모든 노드가 같은 순간에 같은 데이터를 볼 수 있다.
+* 가용성(Availability): 모든 요청이 성공 또는 실패 결과를 반환할 수 있다.
+* 분할내성(Partition tolerance): 메시지 전달이 실패하거나 시스템 일부가 망가져도 시스템이 계속 동작할 수 있다.
+
+* * *
+
+> NoSQL은 AP 또는 CP의 특징을 만족한다. 데이터의 신뢰성보다는 분산에 중점을 둔 방식이므로 약간의 데이터의 유실, 변형 등이 발생하는 것을 감안한다. 하지만 빠르게 확장하여 대규모 데이터를 저장하고 핸들링 할 수 있는 구조를 갖출 수 있도록 한다. 
 
 #### # NoSQL Feature
 NoSQL 데이터베이스는 탁월한 사용자 경험을 제공하기 위하여 유연성과 확장성을 비롯해 고성능의 매우 기능적인 데이터베이스를 필요로 하는 모바일, 웹이나 게이밍과 같은 다양한 현대적인 애플리케이션에 적합합니다.
@@ -128,3 +142,4 @@ NoSQL 데이터베이스는 탁월한 사용자 경험을 제공하기 위하여
 7. [NoSQL이란 무엇인가? 대량데이터 동시처리위한 DBMS 종류와 특징 - SAMSUNG SDS](https://www.samsungsds.com/global/ko/support/insights/1195843_2284.html)
 8. [데이터베이스 스키마 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%EC%8A%A4%ED%82%A4%EB%A7%88)
 9. [2018 정보처리기사 필기 기본서 - NaverBook](https://book.naver.com/bookdb/book_detail.nhn?bid=12696851)
+10. [CAP 정리 - 위키백과](https://ko.wikipedia.org/wiki/CAP_%EC%A0%95%EB%A6%AC)
