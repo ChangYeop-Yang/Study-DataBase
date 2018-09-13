@@ -58,17 +58,16 @@ ACID(원자성, 일관성, 고립성, 지속성)는 데이터베이스 트랜잭
 4. 시스템의 복잡함
 5. 대용량 디스크로 엑세스가 집중되면 과부하 발생
 
-## ★ DATABASE Objects
-#### ※ 속성 (Attribute)
-* 데이터베이스를 구축하는 가장 작은 논리적 단위로 파일 시스템의 필드 개념에 해당한다.
-* 자체만으로는 정보를 표현할 수 없고 정보를 표현하는 단위인 개체나 관계의 특성을 성명하는 도구의 의미로 사용된다.
+## ★ OLTP (Online transaction processing)
 
-#### ※ 개체 (Entitiy)
-* 정보를 나타내는 논리적 단위로서 파일 시스템의 레코드에 해당한다.
-* 개체는 하나 이상의 속성을 조합하여 구성된다.
-* 현실 세계의 표현 단위 역할을 하게 된다.
-* 개체는 단독으로 존재할 수 있다.
-* 모든 개체는 구별가능하다.
+<p align="center">
+ <img src="https://kr.clustrix.com/wp-content/uploads/2017/06/OLTP-vs-OLAP.jpg" />
+</p>
+
+**네트워크상의 여러 이용자가 실시간으로 데이터베이스의 데이터를 갱신하거나 조회하는 등의 단위 작업을 처리하는 방식**을 말한다. 주로 신용카드 조회 업무나 자동 현금 지급 등 금융 전산 관련 부문에서 많이 발생하기 때문에 ‘온라인 거래처리’라고도 한다. 이 방식의 특징은 기존 컴퓨터 통신에서 이용해 온 온라인 방식과 달리 다수의 이용자가 거의 동시에 이용할 수 있도록 송수신 자료를 트랜잭션(데이터 파일의 내용에 영향을 미치는 거래 ·입출고 ·저장 등의 단위 행위) 단위로 압축, 비어 있는 공간을 다른 사용자들이 함께 쓸 수 있도록 한 점이다.
+
+## ★ ORM (Object-relational mapping)
+데이터베이스와 객체 지향 프로그래밍 언어 간의 호환되지 않는 데이터를 변환하는 프로그래밍 기법이다. 객체 관계 매핑 라고도 부른다. 객체 지향 언어에서 사용할 수 있는 "가상" 객체 데이터베이스를 구축하는 방법이다.
 
 ## ★ DATABASE TYPE
 
@@ -145,5 +144,8 @@ NoSQL 데이터베이스는 탁월한 사용자 경험을 제공하기 위하여
 6. [NoSQL이란? - Amazon AWS](https://aws.amazon.com/ko/nosql/)
 7. [NoSQL이란 무엇인가? 대량데이터 동시처리위한 DBMS 종류와 특징 - SAMSUNG SDS](https://www.samsungsds.com/global/ko/support/insights/1195843_2284.html)
 8. [데이터베이스 스키마 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%EC%8A%A4%ED%82%A4%EB%A7%88)
-9. [2018 정보처리기사 필기 기본서 - NaverBook](https://book.naver.com/bookdb/book_detail.nhn?bid=12696851)
-10. [CAP 정리 - 위키백과](https://ko.wikipedia.org/wiki/CAP_%EC%A0%95%EB%A6%AC)
+9. [CAP 정리 - 위키백과](https://ko.wikipedia.org/wiki/CAP_%EC%A0%95%EB%A6%AC)
+10. [OLTP - 위키백과](https://terms.naver.com/entry.nhn?docId=1180131&cid=40942&categoryId=32843)
+11. [객체 관계 매핑 - 위키백과](https://ko.wikipedia.org/wiki/%EA%B0%9D%EC%B2%B4_%EA%B4%80%EA%B3%84_%EB%A7%A4%ED%95%91)
+
+1. [2018 정보처리기사 필기 기본서 - NaverBook](https://book.naver.com/bookdb/book_detail.nhn?bid=12696851)
