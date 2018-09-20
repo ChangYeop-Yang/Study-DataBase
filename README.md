@@ -13,6 +13,12 @@
 ## ★ DATABASE MANAGEMENT SYSTEM (DBMS)
 The database management system (DBMS) is the software that interacts with end users, applications, and the database itself to capture and analyze data. A general-purpose DBMS allows the definition, creation, querying, update, and administration of databases. A database is generally stored in a DBMS-specific format which is not portable, but different DBMSs can share data by using standards such as SQL and ODBC or JDBC. The sum total of the database, the DBMS and its associated applications can be referred to as a "database system". Often the term "database" is used to loosely refer to any of the DBMS, the database system or an application associated the database.
 
+#### # DBMS Interfaces
+• Embeded Aproach: e.g embeded SQL (for C, C++, etc.), SQLJ (for java)
+• Procedure Cal Aproach: e.g. JDBC for Java, ODBC (Open Databse Conectivity) for other programming languages as API’s (aplication programming interfaces)
+• Database Programming Language Aproach: e.g. ORACLE has PL/SQL, a programming language based on SQL; language incorporates SQL and its data types as integral components
+• Scripting Languages: PHP (client-side scripting) and
+
 ## ★ DATABASE Schema
 데이터베이스 스키마(database schema)는 데이터베이스에서 자료의 구조, 자료의 표현 방법, 자료 간의 관계를 형식 언어로 정의한 구조이다. 데이터베이스 관리 시스템(DBMS)이 주어진 설정에 따라 데이터베이스 스키마를 생성하며, 데이터베이스 사용자가 자료를 저장, 조회, 삭제, 변경할 때 DBMS는 자신이 생성한 데이터베이스 스키마를 참조하여 명령을 수행한다.
 
