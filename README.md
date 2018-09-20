@@ -13,6 +13,10 @@
 ## ★ DATABASE MANAGEMENT SYSTEM (DBMS)
 The database management system (DBMS) is the software that interacts with end users, applications, and the database itself to capture and analyze data. A general-purpose DBMS allows the definition, creation, querying, update, and administration of databases. A database is generally stored in a DBMS-specific format which is not portable, but different DBMSs can share data by using standards such as SQL and ODBC or JDBC. The sum total of the database, the DBMS and its associated applications can be referred to as a "database system". Often the term "database" is used to loosely refer to any of the DBMS, the database system or an application associated the database.
 
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/20036523/45788758-6d161180-bcb7-11e8-9392-4e2f171d83b4.png" />
+</p>
+
 #### # DBMS Interfaces
 • Embeded Aproach: e.g embeded SQL (for C, C++, etc.), SQLJ (for java)
 • Procedure Cal Aproach: e.g. JDBC for Java, ODBC (Open Databse Conectivity) for other programming languages as API’s (aplication programming interfaces)
