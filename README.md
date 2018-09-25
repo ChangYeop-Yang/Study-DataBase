@@ -172,6 +172,6 @@ NoSQL 데이터베이스는 탁월한 사용자 경험을 제공하기 위하여
 11. [객체 관계 매핑 - 위키백과](https://ko.wikipedia.org/wiki/%EA%B0%9D%EC%B2%B4_%EA%B4%80%EA%B3%84_%EB%A7%A4%ED%95%91)
 12. [데이터 조작 언어 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A1%B0%EC%9E%91_%EC%96%B8%EC%96%B4)
 13. [데이터 정의 언어 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%95%EC%9D%98_%EC%96%B8%EC%96%B4)
-14. [데이터 제어 언어 - ](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%9C%EC%96%B4_%EC%96%B8%EC%96%B4)
+14. [데이터 제어 언어 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%9C%EC%96%B4_%EC%96%B8%EC%96%B4)
 
 1. [2018 정보처리기사 필기 기본서 - NaverBook](https://book.naver.com/bookdb/book_detail.nhn?bid=12696851)
