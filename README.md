@@ -31,8 +31,6 @@ The database management system (DBMS) is the software that interacts with end us
 #### # DDL (Data Definition Language) - CREATE, DROP, ALTER, TURNCATE
 데이터 정의 언어(영어: Data Definition Language, DDL)는 **컴퓨터 사용자 또는 응용 프로그램 소프트웨어가 컴퓨터의 데이터를 정의하는 컴퓨터 언어 또는 컴퓨터 언어 요소**이다.
 
-* * *
-
 ```SQL
 /* MARK: - The SQL CREATE TABLE Statement */
 CREATE TABLE table_name (
