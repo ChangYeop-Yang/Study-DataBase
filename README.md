@@ -26,10 +26,49 @@ The database management system (DBMS) is the software that interacts with end us
 ## ★ DATABASE Language
 
 #### # DML (Data Manipulation Language) - SELECT, INSERT, UPDATE, DELETE
-데이터 조작 언어(영어: Data Manipulation Language, DML)은 **데이터베이스 사용자 또는 응용 프로그램 소프트웨어가 컴퓨터 데이터베이스에 대해 데이터 검색, 등록, 삭제, 갱신을 위한, 데이터베이스 언어 또는 데이터베이스 언어 요소**이다. 
+데이터 조작 언어(영어: Data Manipulation Language, DML)은 **데이터베이스 사용자 또는 응용 프로그램 소프트웨어가 컴퓨터 데이터베이스에 대해 데이터 검색, 등록, 삭제, 갱신을 위한, 데이터베이스 언어 또는 데이터베이스 언어 요소**이다.
 
 #### # DDL (Data Definition Language) - CREATE, DROP, ALTER, TURNCATE
 데이터 정의 언어(영어: Data Definition Language, DDL)는 **컴퓨터 사용자 또는 응용 프로그램 소프트웨어가 컴퓨터의 데이터를 정의하는 컴퓨터 언어 또는 컴퓨터 언어 요소**이다.
+
+* * *
+
+```SQL
+/* MARK: - The SQL CREATE TABLE Statement */
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+);
+
+/* MARK: -The SQL CREATE DATABASE Statement */
+CREATE DATABASE databasename;
+```
+
+* * *
+
+```SQL
+/* MARK: - The SQL DROP DATABASE Statement */
+DROP DATABASE databasename;
+```
+
+* * *
+
+```SQL
+/* MARK: - ALTER TABLE - ADD Column */
+ALTER TABLE table_name
+ADD column_name datatype;
+
+/* MARK: - ALTER TABLE - DROP COLUMN */
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
+/* MARK: - ALTER TABLE - ALTER/MODIFY COLUMN */
+ALTER TABLE table_name
+ALTER COLUMN column_name datatype;
+```
+
+* * *
 
 #### # DCL (Data Control Language) - GRANT, REVOKE
 데이터 제어 언어(영어: Data Control Language, DCL)는 **데이터베이스에서 데이터에 대한 액세스를 제어하기 위한 데이터베이스 언어 또는 데이터베이스 언어 요소**이다. 권한 부여(GRANT)와 박탈(REVOKE)이 있으며, 설정할 수 있는 권한으로는 연결(CONNECT), 질의(SELECT), 자료 삽입(INSERT), 갱신(UPDATE), 삭제(DELETE) 등이 있다.
@@ -173,5 +212,6 @@ NoSQL 데이터베이스는 탁월한 사용자 경험을 제공하기 위하여
 12. [데이터 조작 언어 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A1%B0%EC%9E%91_%EC%96%B8%EC%96%B4)
 13. [데이터 정의 언어 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%95%EC%9D%98_%EC%96%B8%EC%96%B4)
 14. [데이터 제어 언어 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%9C%EC%96%B4_%EC%96%B8%EC%96%B4)
+15. [w3schools - THE WORLD'S LARGEST WEB DEVELOPER SITE](https://www.w3schools.com/)
 
 1. [2018 정보처리기사 필기 기본서 - NaverBook](https://book.naver.com/bookdb/book_detail.nhn?bid=12696851)
