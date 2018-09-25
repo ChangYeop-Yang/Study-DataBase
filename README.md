@@ -23,12 +23,25 @@ The database management system (DBMS) is the software that interacts with end us
 • Database Programming Language Aproach: e.g. ORACLE has PL/SQL, a programming language based on SQL; language incorporates SQL and its data types as integral components
 • Scripting Languages: PHP (client-side scripting) and
 
+## ★ DATABASE Language
+
+#### # DML (Data Manipulation Language) - SELECT, INSERT, UPDATE, DELETE
+데이터 조작 언어(영어: Data Manipulation Language, DML)은 **데이터베이스 사용자 또는 응용 프로그램 소프트웨어가 컴퓨터 데이터베이스에 대해 데이터 검색, 등록, 삭제, 갱신을 위한, 데이터베이스 언어 또는 데이터베이스 언어 요소**이다. 2007년 현재 가장 대중적 데이터 조작 언어는 SQL 데이터 조작 언어이다. SQL은 관계형 데이터베이스에 대해 검색 및 업데이트 등의 데이터 조작을 위해 사용된다.
+
+#### # DDL (Data Definition Language) - CREATE, DROP, ALTER, TURNCATE
+데이터 정의 언어(영어: Data Definition Language, DDL)는 **컴퓨터 사용자 또는 응용 프로그램 소프트웨어가 컴퓨터의 데이터를 정의하는 컴퓨터 언어 또는 컴퓨터 언어 요소**이다.
+
+#### # DCL (Data Control Language) - GRANT, REVOKE
+데이터 제어 언어(영어: Data Control Language, DCL)는 **데이터베이스에서 데이터에 대한 액세스를 제어하기 위한 데이터베이스 언어 또는 데이터베이스 언어 요소**이다. 권한 부여(GRANT)와 박탈(REVOKE)이 있으며, 설정할 수 있는 권한으로는 연결(CONNECT), 질의(SELECT), 자료 삽입(INSERT), 갱신(UPDATE), 삭제(DELETE) 등이 있다.
+
 ## ★ DATABASE Schema
 데이터베이스 스키마(database schema)는 데이터베이스에서 자료의 구조, 자료의 표현 방법, 자료 간의 관계를 형식 언어로 정의한 구조이다. 데이터베이스 관리 시스템(DBMS)이 주어진 설정에 따라 데이터베이스 스키마를 생성하며, 데이터베이스 사용자가 자료를 저장, 조회, 삭제, 변경할 때 DBMS는 자신이 생성한 데이터베이스 스키마를 참조하여 명령을 수행한다.
 
-* 외부 스키마(External Schema) : 프로그래머나 사용자의 입장에서 데이터베이스의 모습으로 조직의 일부분을 정의한 것
-* 개념 스키마(Conceptual Schema) : 모든 응용 시스템과 사용자들이 필요로하는 데이터를 통합한 조직 전체의 데이터베이스 구조를 논리적으로 정의한 것
-* 내부 스키마(Internal Schema) : 전체 데이터베이스의 물리적 저장 형태를 기술하는 것
+|Schema Name|Description|
+|:---------:|:---------:|
+|외부 스키마(External Schema)|프로그래머나 사용자의 입장에서 데이터베이스의 모습으로 조직의 일부분을 정의한 것|
+|개념 스키마(Conceptual Schema)|모든 응용 시스템과 사용자들이 필요로하는 데이터를 통합한 조직 전체의 데이터베이스 구조를 논리적으로 정의한 것|
+|내부 스키마(Internal Schema)|전체 데이터베이스의 물리적 저장 형태를 기술하는 것|
 
 ## ★ DATABASE Transation
 트랜잭션은 하나의 논리적 단위를 구성하는 데이터베이스 연산의 모임이다. 동시에 여러 트랜잭션이 수행되기 위해서 데이터베이스의 일관성이 보장되어야 하며 이를 위해 동시성 제어(concurrency control)와 회복 제어(recovery control)를 위한 모듈이 있으며 이 둘을 합쳐 트랜잭션 관리 모듈(transaction management module)이라고 한다. 데이터베이스 시스템은 각각의 트랜잭션에 대해 **원자성(Atomicity), 일관성(Consistency), 고립성(Isolation), 영구성(Durability)** 을 보장한다.
@@ -157,5 +170,8 @@ NoSQL 데이터베이스는 탁월한 사용자 경험을 제공하기 위하여
 9. [CAP 정리 - 위키백과](https://ko.wikipedia.org/wiki/CAP_%EC%A0%95%EB%A6%AC)
 10. [OLTP - 위키백과](https://terms.naver.com/entry.nhn?docId=1180131&cid=40942&categoryId=32843)
 11. [객체 관계 매핑 - 위키백과](https://ko.wikipedia.org/wiki/%EA%B0%9D%EC%B2%B4_%EA%B4%80%EA%B3%84_%EB%A7%A4%ED%95%91)
+12. [데이터 조작 언어 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A1%B0%EC%9E%91_%EC%96%B8%EC%96%B4)
+13. [데이터 정의 언어 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%95%EC%9D%98_%EC%96%B8%EC%96%B4)
+14. [데이터 제어 언어 - ](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%9C%EC%96%B4_%EC%96%B8%EC%96%B4)
 
 1. [2018 정보처리기사 필기 기본서 - NaverBook](https://book.naver.com/bookdb/book_detail.nhn?bid=12696851)
