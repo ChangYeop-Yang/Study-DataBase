@@ -26,7 +26,7 @@ The database management system (DBMS) is the software that interacts with end us
 ## ★ DATABASE Language
 
 #### # DML (Data Manipulation Language) - SELECT, INSERT, UPDATE, DELETE
-데이터 조작 언어(영어: Data Manipulation Language, DML)은 **데이터베이스 사용자 또는 응용 프로그램 소프트웨어가 컴퓨터 데이터베이스에 대해 데이터 검색, 등록, 삭제, 갱신을 위한, 데이터베이스 언어 또는 데이터베이스 언어 요소**이다. 2007년 현재 가장 대중적 데이터 조작 언어는 SQL 데이터 조작 언어이다. SQL은 관계형 데이터베이스에 대해 검색 및 업데이트 등의 데이터 조작을 위해 사용된다.
+데이터 조작 언어(영어: Data Manipulation Language, DML)은 **데이터베이스 사용자 또는 응용 프로그램 소프트웨어가 컴퓨터 데이터베이스에 대해 데이터 검색, 등록, 삭제, 갱신을 위한, 데이터베이스 언어 또는 데이터베이스 언어 요소**이다. 
 
 #### # DDL (Data Definition Language) - CREATE, DROP, ALTER, TURNCATE
 데이터 정의 언어(영어: Data Definition Language, DDL)는 **컴퓨터 사용자 또는 응용 프로그램 소프트웨어가 컴퓨터의 데이터를 정의하는 컴퓨터 언어 또는 컴퓨터 언어 요소**이다.
