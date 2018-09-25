@@ -28,6 +28,17 @@ The database management system (DBMS) is the software that interacts with end us
 #### # DML (Data Manipulation Language) - SELECT, INSERT, UPDATE, DELETE
 데이터 조작 언어(영어: Data Manipulation Language, DML)은 **데이터베이스 사용자 또는 응용 프로그램 소프트웨어가 컴퓨터 데이터베이스에 대해 데이터 검색, 등록, 삭제, 갱신을 위한, 데이터베이스 언어 또는 데이터베이스 언어 요소**이다.
 
+```SQL
+/* MARK: - The SQL SELECT Statement */
+SELECT column1, column2 FROM table_name;
+
+/* MARK: - The SQL WHERE Clause */
+SELECT column1, column2 FROM table_name WHERE condition;
+
+/* MARK: - The SQL ORDER BY Keyword */
+SELECT column1, column2 FROM table_name ORDER BY column1, column2 ASC|DESC;
+```
+
 #### # DDL (Data Definition Language) - CREATE, DROP, ALTER, TURNCATE
 데이터 정의 언어(영어: Data Definition Language, DDL)는 **컴퓨터 사용자 또는 응용 프로그램 소프트웨어가 컴퓨터의 데이터를 정의하는 컴퓨터 언어 또는 컴퓨터 언어 요소**이다.
 
@@ -65,8 +76,6 @@ DROP COLUMN column_name;
 ALTER TABLE table_name
 ALTER COLUMN column_name datatype;
 ```
-
-* * *
 
 #### # DCL (Data Control Language) - GRANT, REVOKE
 데이터 제어 언어(영어: Data Control Language, DCL)는 **데이터베이스에서 데이터에 대한 액세스를 제어하기 위한 데이터베이스 언어 또는 데이터베이스 언어 요소**이다. 권한 부여(GRANT)와 박탈(REVOKE)이 있으며, 설정할 수 있는 권한으로는 연결(CONNECT), 질의(SELECT), 자료 삽입(INSERT), 갱신(UPDATE), 삭제(DELETE) 등이 있다.
