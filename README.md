@@ -218,5 +218,5 @@ NoSQL 데이터베이스는 탁월한 사용자 경험을 제공하기 위하여
 - Graph DB : Euler & Graph Theory에서 유래한 DB입니다. Nodes, Relationship, Key-Value 데이터 모델을 채용하고 있습니다. Neo4J, OreientDB 등의 제품이 있습니다.
 
 ## REFERENCE
-* [Reference URL Site List](https://github.com/ChangYeop-Yang/Study-DataBase/issues/4)
-* [Reference Book Site List](https://github.com/ChangYeop-Yang/Study-DataBase/issues/5)
+* [Reference URL Site List](https://github.com/ChangYeop-Yang/Study-DataBase/issues/4) :smile:
+* [Reference Book Site List](https://github.com/ChangYeop-Yang/Study-DataBase/issues/5) :smiley:
