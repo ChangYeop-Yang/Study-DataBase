@@ -68,18 +68,10 @@ CREATE TABLE table_name (
 
 /* MARK: -The SQL CREATE DATABASE Statement */
 CREATE DATABASE databasename;
-```
 
-* * *
-
-```SQL
 /* MARK: - The SQL DROP DATABASE Statement */
 DROP DATABASE databasename;
-```
 
-* * *
-
-```SQL
 /* MARK: - ALTER TABLE - ADD Column */
 ALTER TABLE table_name
 ADD column_name datatype;
