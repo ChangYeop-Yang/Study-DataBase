@@ -119,10 +119,6 @@ GRANT privilege_name ON object_name TO {user_name |PUBLIC |role_name} [WITH GRAN
 
 * They are widely used to design relational databases. The entities in the ER schema become tables, attributes and converted the database schema. Since they can be used to visualize database tables and their relationships it’s commonly used for database troubleshooting as well.
 
-<p align="center">
-    <img src="https://d3n817fwly711g.cloudfront.net/uploads/2012/03/ER-Diagram-Elements.jpeg" />
-</p>
-
 * [Ultimate ER Diagram Tutorial (Entity Relationship Diagrams)](https://creately.com/blog/diagrams/er-diagrams-tutorial/)
 
 ## ★ DATABASE Schema
