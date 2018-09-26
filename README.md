@@ -217,6 +217,7 @@ NoSQL 데이터베이스는 탁월한 사용자 경험을 제공하기 위하여
 - Document DB : Lotus Notes에서 유래되었으며, JSON, XML과 같은 Collection 데이터 모델 구조를 채택하고 있습니다. MongoDB, CoughDB가 이 종류에 해당합니다.
 - Graph DB : Euler & Graph Theory에서 유래한 DB입니다. Nodes, Relationship, Key-Value 데이터 모델을 채용하고 있습니다. Neo4J, OreientDB 등의 제품이 있습니다.
 
-## REFERENCE
-* [Reference URL Site List](https://github.com/ChangYeop-Yang/Study-DataBase/issues/4) :smile:
-* [Reference Book Site List](https://github.com/ChangYeop-Yang/Study-DataBase/issues/5) :smiley:
+## ★ REFERENCE
+:smile: [Reference URL Site List](https://github.com/ChangYeop-Yang/Study-DataBase/issues/4)
+
+:smiley: [Reference Book Site List](https://github.com/ChangYeop-Yang/Study-DataBase/issues/5) 
