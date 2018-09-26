@@ -6,10 +6,31 @@
 * 통합 데이터 (Integrated Data) : 데이터 집단에서 자료의 중복이나 군더더기를 제거하여 최적화시킨 데이터의 집합이다.
 * 저장 데이터 (Stored Data) : 컴퓨터 시스템이 접근 가능한 저장 매체에 저당 된 데이터의 집합이다.
 
+#### # DATABASE Feature
+
+* 실시간 접근성 : 수시적이고 비정형적인 질의(query)에 대하여 실시간 처리로 응답할 수 있어야 한다.
+* 지속적인 변화 : 새로운 데이터의 삽입(insertion), 기존 데이터의 삭제(deletion), 갱신(update)으로 항상 그 내용이 변하고, 또 그 속에서 현재의 정확한 데이터를 유지해야 한다.
+* 동시 공유 : 같은 내용의 데이터를 여러 사람이 서로 다른 방법으로 동시에 공용할 수 있어야 한다.
+* 내용에 대한 참조 : 데이터베이스 내에 있는 데이터 레코드들은 주소나 위치에 의해서가 아니라 사용자가 요구하는 데이터의 내용에 따라 참조해야 한다.
+* 데이터 논리적 독립성 : 데이터의 논리적 구조를 응용 프로그램 안에 프로그램화 시켜두는 것이 아니라 독립적으로 DBMS에서 관리한다. 이 경우 사용되는 것이 개념(논리) 스키마가 되는 것이죠.
+
 ## ★ DATABASE Structure
 * 논리적 구조 : 사용자나 응용 프로그래머가 데이터베이스를 바라보는 관점에서 데이터 배치 형태를 의미하는 것으로 논리적 레코드를 가지고 사용자나 응용 프로그래머의 상상에 따라 전개한 모양을 의미한다.
 * 물리적 구조 : 데이터가 물리적 저장 장치에 배치된 형태를 의미하는 것으로 저장 레코드를 이용하여 실제 물리적 저장 장치 위에 전개한 모양을 의미한다.
- 
+
+## ★ DATABASE Data Independence
+#### # 논리적 독립성 (Logical Data Independence) - 응용 프로그램과 데이터베이스를 독립시키는 것이다.
+
+* Logical data is data about database, that is, it stores information about how data is managed inside. For example, a table (relation) stored in the database and all its constraints, applied on that relation.
+
+* Logical data independence is a kind of mechanism, which liberalizes itself from actual data stored on the disk. If we do some changes on table format, it should not change the data residing on the disk.
+
+#### # 물리적 독립성 (Physical Data Independence) - 응용 프로그램 기억장치와 같은 물리적 장치를 독립시키는 것이다.
+
+* All the schemas are logical, and the actual data is stored in bit format on the disk. Physical data independence is the power to change the physical data without impacting the schema or logical data.
+
+* For example, in case we want to change or upgrade the storage system itself − suppose we want to replace hard-disks with SSD − it should not have any impact on the logical data or schemas.
+
 ## ★ DATABASE MANAGEMENT SYSTEM (DBMS)
 * The database management system (DBMS) is the software that interacts with end users, applications, and the database itself to capture and analyze data. A general-purpose DBMS allows the definition, creation, querying, update, and administration of databases. A database is generally stored in a DBMS-specific format which is not portable, but different DBMSs can share data by using standards such as SQL and ODBC or JDBC. The sum total of the database, the DBMS and its associated applications can be referred to as a "database system". Often the term "database" is used to loosely refer to any of the DBMS, the database system or an application associated the database.
 
@@ -115,13 +136,6 @@ ACID(원자성, 일관성, 고립성, 지속성)는 데이터베이스 트랜잭
 * **일관성(Consistency)** : 트랜잭션이 실행을 성공적으로 완료하면 언제나 일관성 있는 데이터베이스 상태로 유지하는 것을 의미한다. 무결성 제약이 모든 계좌는 잔고가 있어야 한다면 이를 위반하는 트랜잭션은 중단된다.
 * **고립성(Isolation)** : 트랜잭션을 수행 시 다른 트랜잭션의 연산 작업이 끼어들지 못하도록 보장하는 것을 의미한다. 이것은 트랜잭션 밖에 있는 어떤 연산도 중간 단계의 데이터를 볼 수 없음을 의미한다. 은행 관리자는 이체 작업을 하는 도중에 쿼리를 실행하더라도 특정 계좌간 이체하는 양 쪽을 볼 수 없다. 공식적으로 고립성은 트랜잭션 실행내역은 연속적이어야 함을 의미한다. 성능관련 이유로 인해 이 특성은 가장 유연성 있는 제약 조건이다. 자세한 내용은 관련 문서를 참조해야 한다.
 * **지속성(Durability)** : 성공적으로 수행된 트랜잭션은 영원히 반영되어야 함을 의미한다. 시스템 문제, DB 일관성 체크 등을 하더라도 유지되어야 함을 의미한다. 전형적으로 모든 트랜잭션은 로그로 남고 시스템 장애 발생 전 상태로 되돌릴 수 있다. 트랜잭션은 로그에 모든 것이 저장된 후에만 commit 상태로 간주될 수 있다.
-
-## ★ DATABASE Feature
-1. 실시간 접근성
-2. 지속적인 변화
-3. 동시 공유
-4. 내용에 대한 참조
-5. 데이터 논리적 독립성
 
 ## ★ DATABASE Advantage / Disadvantage
 |DATABASE Advantage|DATABASE Disadvantage|
