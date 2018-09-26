@@ -17,6 +17,17 @@ The database management system (DBMS) is the software that interacts with end us
  <img src="https://user-images.githubusercontent.com/20036523/45788758-6d161180-bcb7-11e8-9392-4e2f171d83b4.png" />
 </p>
 
+* 데이터베이스 관리 시스템(영어: database management system, DBMS)은 다수의 사용자들이 데이터베이스 내의 데이터를 접근할 수 있도록 해주는 소프트웨어 도구의 집합이다. DBMS은 사용자 또는 다른 프로그램의 요구를 처리하고 적절히 응답하여 데이터를 사용할 수 있도록 해준다.
+
+|DBMS Function|Explanation|
+|:-----------:|:---------:|
+|정의|데이터에 대한 형식, 구조, 제약조건들을 명세하는 기능이다. 이때 데이터베이스에 대한 정의 및 설명은 카탈로그나 사전의 형태로 저장된다.|
+|구축|DBMS가 관리하는 기억 장치에 데이터를 저장하는 기능이다.|
+|조작|특정한 데이터를 검색하기 위한 질의, 데이터베이스의 갱신, 보고서 생성 기능 등을 포함한다.|
+|공유|여러 사용자와 프로그램이 데이터베이스에 동시에 접근하도록 하는 기능이다.|
+|보호|하드웨어나 소프트웨어의 오동작 또는 권한이 없는 악의적인 접근으로부터 시스템을 보호한다.|
+|유지보수|시간이 지남에 따라 변화하는 요구사항을 반영할 수 있도록 하는 기능이다.|
+
 #### # DBMS Interfaces
 • Embeded Aproach: e.g embeded SQL (for C, C++, etc.), SQLJ (for java)
 • Procedure Cal Aproach: e.g. JDBC for Java, ODBC (Open Databse Conectivity) for other programming languages as API’s (aplication programming interfaces)
@@ -37,6 +48,15 @@ SELECT column1, column2 FROM table_name WHERE condition;
 
 /* MARK: - The SQL ORDER BY Keyword */
 SELECT column1, column2 FROM table_name ORDER BY column1, column2 ASC|DESC;
+
+/* MARK: - The SQL INSERT INTO Statement */
+INSERT INTO table_name (column1, column2, column3) VALUES (value1, value2, value3);
+
+/* MARK: - The SQL UPDATE Statement */
+UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;
+
+/* MARK: - The SQL DELETE Statement */
+DELETE FROM table_name WHERE condition;
 ```
 
 #### # DDL (Data Definition Language) - CREATE, DROP, ALTER, TURNCATE
