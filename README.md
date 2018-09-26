@@ -113,7 +113,14 @@ GRANT privilege_name ON object_name TO {user_name |PUBLIC |role_name} [WITH GRAN
 
 * They are widely used to design relational databases. The entities in the ER schema become tables, attributes and converted the database schema. Since they can be used to visualize database tables and their relationships it’s commonly used for database troubleshooting as well.
 
+|ER Diagram Image|ER Diagram Name|ER Diagram explation|
+|:--------------:|:-------------:|:------------------:|
+|![](https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/erd-symbols/Entity.PNG)|Entity|An entity can be a person, place, event, or object that is relevant to a given system.|
+|![](https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/erd-symbols/Attribute.PNG)|Attribute|An attribute is a property, trait, or characteristic of an entity, relationship, or another attribute.|
+|![](https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/erd-symbols/RelationshipShape.PNG)|Relationship|A relationship describes how entities interact.|
+
 * [Ultimate ER Diagram Tutorial (Entity Relationship Diagrams)](https://creately.com/blog/diagrams/er-diagrams-tutorial/)
+* [Entity-Relationship Diagram Symbols and Notation](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
 
 ## ★ DATABASE Schema
 데이터베이스 스키마(database schema)는 **데이터베이스에서 자료의 구조, 자료의 표현 방법, 자료 간의 관계를 형식 언어로 정의한 구조**이다. 데이터베이스 관리 시스템(DBMS)이 주어진 설정에 따라 데이터베이스 스키마를 생성하며, 데이터베이스 사용자가 자료를 저장, 조회, 삭제, 변경할 때 DBMS는 자신이 생성한 데이터베이스 스키마를 참조하여 명령을 수행한다.
