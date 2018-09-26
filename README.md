@@ -13,10 +13,6 @@
 ## ★ DATABASE MANAGEMENT SYSTEM (DBMS)
 The database management system (DBMS) is the software that interacts with end users, applications, and the database itself to capture and analyze data. A general-purpose DBMS allows the definition, creation, querying, update, and administration of databases. A database is generally stored in a DBMS-specific format which is not portable, but different DBMSs can share data by using standards such as SQL and ODBC or JDBC. The sum total of the database, the DBMS and its associated applications can be referred to as a "database system". Often the term "database" is used to loosely refer to any of the DBMS, the database system or an application associated the database.
 
-<p align="center">
- <img src="https://user-images.githubusercontent.com/20036523/45788758-6d161180-bcb7-11e8-9392-4e2f171d83b4.png" />
-</p>
-
 * 데이터베이스 관리 시스템(영어: database management system, DBMS)은 다수의 사용자들이 데이터베이스 내의 데이터를 접근할 수 있도록 해주는 소프트웨어 도구의 집합이다. DBMS은 사용자 또는 다른 프로그램의 요구를 처리하고 적절히 응답하여 데이터를 사용할 수 있도록 해준다.
 
 |DBMS Function|Explanation|
