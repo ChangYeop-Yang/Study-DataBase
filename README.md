@@ -73,20 +73,25 @@ CREATE DATABASE databasename;
 DROP DATABASE databasename;
 
 /* MARK: - ALTER TABLE - ADD Column */
-ALTER TABLE table_name
-ADD column_name datatype;
+ALTER TABLE table_name ADD column_name datatype;
 
 /* MARK: - ALTER TABLE - DROP COLUMN */
-ALTER TABLE table_name
-DROP COLUMN column_name;
+ALTER TABLE table_name DROP COLUMN column_name;
 
 /* MARK: - ALTER TABLE - ALTER/MODIFY COLUMN */
-ALTER TABLE table_name
-ALTER COLUMN column_name datatype;
+ALTER TABLE table_name ALTER COLUMN column_name datatype;
 ```
 
 #### # DCL (Data Control Language) - GRANT, REVOKE
 데이터 제어 언어(영어: Data Control Language, DCL)는 **데이터베이스에서 데이터에 대한 액세스를 제어하기 위한 데이터베이스 언어 또는 데이터베이스 언어 요소**이다. 권한 부여(GRANT)와 박탈(REVOKE)이 있으며, 설정할 수 있는 권한으로는 연결(CONNECT), 질의(SELECT), 자료 삽입(INSERT), 갱신(UPDATE), 삭제(DELETE) 등이 있다.
+
+```SQL
+/* MARK: - The SQL Reovke DATABASE Statement */
+REVOKE privilege_name ON object_name FROM {user_name |PUBLIC |role_name};
+
+/* MARK: - The SQL Grant DATABASE Statement */
+GRANT privilege_name ON object_name TO {user_name |PUBLIC |role_name} [WITH GRANT OPTION];
+```
 
 ## ★ DATABASE Schema
 데이터베이스 스키마(database schema)는 데이터베이스에서 자료의 구조, 자료의 표현 방법, 자료 간의 관계를 형식 언어로 정의한 구조이다. 데이터베이스 관리 시스템(DBMS)이 주어진 설정에 따라 데이터베이스 스키마를 생성하며, 데이터베이스 사용자가 자료를 저장, 조회, 삭제, 변경할 때 DBMS는 자신이 생성한 데이터베이스 스키마를 참조하여 명령을 수행한다.
