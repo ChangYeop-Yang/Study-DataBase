@@ -218,20 +218,5 @@ NoSQL 데이터베이스는 탁월한 사용자 경험을 제공하기 위하여
 - Graph DB : Euler & Graph Theory에서 유래한 DB입니다. Nodes, Relationship, Key-Value 데이터 모델을 채용하고 있습니다. Neo4J, OreientDB 등의 제품이 있습니다.
 
 ## REFERENCE
-1. [데이터베이스 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4)
-2. [데이터베이스 트랜잭션 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98)
-3. [관계형 데이터베이스 - 위키백과](https://ko.wikipedia.org/wiki/%EA%B4%80%EA%B3%84%ED%98%95_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4)
-4. [NoSQL - 위키백과](https://ko.wikipedia.org/wiki/NoSQL)
-5. [ACID - 위키백과](https://ko.wikipedia.org/wiki/ACID)
-6. [NoSQL이란? - Amazon AWS](https://aws.amazon.com/ko/nosql/)
-7. [NoSQL이란 무엇인가? 대량데이터 동시처리위한 DBMS 종류와 특징 - SAMSUNG SDS](https://www.samsungsds.com/global/ko/support/insights/1195843_2284.html)
-8. [데이터베이스 스키마 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%EC%8A%A4%ED%82%A4%EB%A7%88)
-9. [CAP 정리 - 위키백과](https://ko.wikipedia.org/wiki/CAP_%EC%A0%95%EB%A6%AC)
-10. [OLTP - 위키백과](https://terms.naver.com/entry.nhn?docId=1180131&cid=40942&categoryId=32843)
-11. [객체 관계 매핑 - 위키백과](https://ko.wikipedia.org/wiki/%EA%B0%9D%EC%B2%B4_%EA%B4%80%EA%B3%84_%EB%A7%A4%ED%95%91)
-12. [데이터 조작 언어 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A1%B0%EC%9E%91_%EC%96%B8%EC%96%B4)
-13. [데이터 정의 언어 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%95%EC%9D%98_%EC%96%B8%EC%96%B4)
-14. [데이터 제어 언어 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%9C%EC%96%B4_%EC%96%B8%EC%96%B4)
-15. [w3schools - THE WORLD'S LARGEST WEB DEVELOPER SITE](https://www.w3schools.com/)
-
-1. [2018 정보처리기사 필기 기본서 - NaverBook](https://book.naver.com/bookdb/book_detail.nhn?bid=12696851)
+* [Reference URL Site List](https://github.com/ChangYeop-Yang/Study-DataBase/issues/4)
+* [Reference Book Site List](https://github.com/ChangYeop-Yang/Study-DataBase/issues/5)
