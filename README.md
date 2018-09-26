@@ -109,7 +109,7 @@ GRANT privilege_name ON object_name TO {user_name |PUBLIC |role_name} [WITH GRAN
 ```
 
 ## ★ 개체-관계 다이어그램(Entity-Relationship Diagram)
-* An Entity Relationship Diagram (ERD) is a visual representation of different entities within a system and how they relate to each other.
+* An Entity Relationship Diagram (ERD) is **a visual representation of different entities within a system and how they relate to each other.**
 
 * They are widely used to design relational databases. The entities in the ER schema become tables, attributes and converted the database schema. Since they can be used to visualize database tables and their relationships it’s commonly used for database troubleshooting as well.
 
