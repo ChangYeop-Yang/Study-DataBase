@@ -134,7 +134,15 @@ GRANT privilege_name ON object_name TO {user_name |PUBLIC |role_name} [WITH GRAN
 ## ★ DATABASE System Catalog - System Catalog - 시스템 카탈로그 (지형 공간정보체계 용어사전, 2016. 1. 3., 구미서관)
 * A system catalog is a group of tables and views that incorporate vital details regarding a database. Every database comprised of a system catalog and the information in the system catalog specifies the framework of the database. For instance, the data dictionary language (DDL) for every table in the database is saved in the system catalog.
 
-* **시스템이 필요로 하는 데이터베이스, 테이블, 뷰, 인덱스, 접근 권한 등에 관한 정보를 메타 데이터 형태로 포함하는 시스템 데이터베이스**이다. 메타는 ‘근원적인 정의 또는 설명’을 의미하는 접두사이다. 따라서 메타 데이터(Meta data)는 데이터에 대한 정의 또는 설명을 말한다. 사용자가 SQL 문을 실행시켜 기본 테이블, 뷰, 인덱스 등에 변화를 주면 시스템 카탈로그가 자동으로 테이블을 갱신한다. 카탈로그 자체도 시스템 테이블로 구성되어있어 일반 이용자도 SQL을 이용하여 내용을 검색해볼 수 있으나 카탈로그의 내용을 삽입, 삭제, 갱신할 수 없다. 잘못될 경우 치명적인 오류를 초래하므로 사용자의 직접적인 접근을 허용하지 않는다. 데이터 디렉토리(Data Directory)는 시스템 카탈로그라는 시스템 데이터베이스에 수록된 데이터에 실제로 접근할 때 필요한 정보를 관리하고 유지하는 시스템이다.
+* 시스템이 필요로 하는 데이터베이스, 테이블, 뷰, 인덱스, 접근 권한 등에 관한 정보를 메타 데이터 형태로 포함하는 시스템 데이터베이스이다. 
+
+* 사용자가 SQL 문을 실행시켜 기본 테이블, 뷰, 인덱스 등에 변화를 주면 시스템 카탈로그가 자동으로 테이블을 갱신한다. 카탈로그 자체도 시스템 테이블로 구성되어있어 일반 이용자도 SQL을 이용하여 내용을 검색해볼 수 있으나 카탈로그의 내용을 삽입, 삭제, 갱신할 수 없다. 잘못될 경우 치명적인 오류를 초래하므로 사용자의 직접적인 접근을 허용하지 않는다. 
+
+> ＆ 메타는 ‘근원적인 정의 또는 설명’을 의미하는 접두사이다. 따라서 메타 데이터(Meta data)는 데이터에 대한 정의 또는 설명을 말한다. 
+
+> ＆ 데이터 디렉토리(Data Directory)는 시스템 카탈로그라는 시스템 데이터베이스에 수록된 데이터에 실제로 접근할 때 필요한 정보를 관리하고 유지하는 시스템이다.
+
+## ★ DATABASE VIEW
 
 ## ★ DATABASE Schema
 데이터베이스 스키마(database schema)는 **데이터베이스에서 자료의 구조, 자료의 표현 방법, 자료 간의 관계를 형식 언어로 정의한 구조**이다. 데이터베이스 관리 시스템(DBMS)이 주어진 설정에 따라 데이터베이스 스키마를 생성하며, 데이터베이스 사용자가 자료를 저장, 조회, 삭제, 변경할 때 DBMS는 자신이 생성한 데이터베이스 스키마를 참조하여 명령을 수행한다.
