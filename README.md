@@ -29,17 +29,19 @@
 |데이터 저장 공간 절약|시스템의 복잡함|
 
 ## ★ DATABASE Structure
+
 * 논리적 구조 : 사용자나 응용 프로그래머가 데이터베이스를 바라보는 관점에서 데이터 배치 형태를 의미하는 것으로 논리적 레코드를 가지고 사용자나 응용 프로그래머의 상상에 따라 전개한 모양을 의미한다.
+
 * 물리적 구조 : 데이터가 물리적 저장 장치에 배치된 형태를 의미하는 것으로 저장 레코드를 이용하여 실제 물리적 저장 장치 위에 전개한 모양을 의미한다.
 
 ## ★ DATABASE Data Independence
-#### # 논리적 독립성 (Logical Data Independence) - 응용 프로그램과 데이터베이스를 독립시키는 것이다.
+#### # 논리적 데이터 독립성 (Logical Data Independence) - 응용 프로그램과 데이터베이스를 독립시키는 것이다. 즉, 개념 스키마가 변겨오디더라도 외부 스키마가 영향을 받지 않는다.
 
 * Logical data is data about database, that is, it stores information about how data is managed inside. For example, a table (relation) stored in the database and all its constraints, applied on that relation.
 
 * Logical data independence is a kind of mechanism, which liberalizes itself from actual data stored on the disk. If we do some changes on table format, it should not change the data residing on the disk.
 
-#### # 물리적 독립성 (Physical Data Independence) - 응용 프로그램 기억장치와 같은 물리적 장치를 독립시키는 것이다.
+#### # 물리적 데이터 독립성 (Physical Data Independence) - 응용 프로그램 기억장치와 같은 물리적 장치를 독립시키는 것이다. 즉, 내부 스키마가 변경되더라도 개념
 
 * All the schemas are logical, and the actual data is stored in bit format on the disk. Physical data independence is the power to change the physical data without impacting the schema or logical data.
 
