@@ -125,7 +125,7 @@ REVOKE privilege_name ON object_name FROM {user_name |PUBLIC |role_name};
 GRANT privilege_name ON object_name TO {user_name |PUBLIC |role_name} [WITH GRANT OPTION];
 ```
 
-## ★ Data Modeling (데이터 모델링)
+## ★ Data Modeling - 데이터 모델링과 데이터 모델의 개념 (데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주))
 
 * 현실 세계에 존재하는 데이터를 컴퓨터의 세계의 데이터베이스로 옮기는 변환 과정이다.
 
