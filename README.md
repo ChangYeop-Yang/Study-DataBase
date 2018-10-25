@@ -127,7 +127,9 @@ GRANT privilege_name ON object_name TO {user_name |PUBLIC |role_name} [WITH GRAN
 
 ## ★ Data Modeling and Data Model - 데이터 모델링과 데이터 모델의 개념 (데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주))
 
-* Data Modeling (데이터 모델링)은 현실 세계에 존재하는 데이터를 컴퓨터의 세계의 데이터베이스로 옮기는 변환 과정이다.
+#### ※ Data Modeling 
+
+* 현실 세계에 존재하는 데이터를 컴퓨터의 세계의 데이터베이스로 옮기는 변환 과정이다.
 
 * 개념적 데이터 모델링 (Conceptual Data Modeling): 현실 세계의 중요 데이터를 추출하여 개념 세계로 옮기는 작업이다.
 
@@ -135,7 +137,9 @@ GRANT privilege_name ON object_name TO {user_name |PUBLIC |role_name} [WITH GRAN
 
 * * *
 
-* Data Model (데이터 모델)은 데이터 모델링의 결과물을 표현하는 도구이다.
+#### ※ Data Model 
+
+* 데이터 모델링의 결과물을 표현하는 도구이다.
 
 * 개념적 데이터 모델 (Coneptual Data Model): 현실 세계를 사람의 머미로 이해할 수 있도록 개념적 모델링의 결과물인 개념적 구조로 표현하는 도구다.
 
