@@ -9,7 +9,7 @@
 
 * 저장 데이터 (Stored Data) : 컴퓨터 시스템이 접근 가능한 저장 매체에 저당 된 데이터의 집합이다.
 
-#### # DATABASE Feature
+#### # DATABASE Feature (데이터베이스 특징)
 
 * 실시간 접근성 (Real-Time Accessibility) : 수시적이고 비정형적인 질의(query)에 대하여 실시간 처리로 응답할 수 있어야 한다.
 
@@ -19,7 +19,7 @@
 
 * 내용에 대한 참조 (Contents Reference) : 데이터베이스 내에 있는 데이터 레코드들은 주소나 위치에 의해서가 아니라 사용자가 요구하는 데이터의 내용에 따라 참조해야 한다.
 
-#### # DATABASE Advantage / Disadvantage
+#### # DATABASE Advantage / Disadvantage (데이터베이스의 장점과 단점)
 |DATABASE Advantage|DATABASE Disadvantage|
 |------------------|---------------------|
 |데이터 중복 최소화|데이터베이스 전문가 필요|
@@ -28,13 +28,14 @@
 |데이터의 논리적, 물리적 독리성|대용량 디스크로 엑서스가 집중되면 과부하 발생|
 |데이터 저장 공간 절약|시스템의 복잡함|
 
-## ★ DATABASE Structure
+## ★ DATABASE Structure (데이터베이스 구조)
 
 * 논리적 구조 : 사용자나 응용 프로그래머가 데이터베이스를 바라보는 관점에서 데이터 배치 형태를 의미하는 것으로 논리적 레코드를 가지고 사용자나 응용 프로그래머의 상상에 따라 전개한 모양을 의미한다.
 
 * 물리적 구조 : 데이터가 물리적 저장 장치에 배치된 형태를 의미하는 것으로 저장 레코드를 이용하여 실제 물리적 저장 장치 위에 전개한 모양을 의미한다.
 
 ## ★ DATABASE Data Independence
+
 #### # 논리적 데이터 독립성 (Logical Data Independence) - 응용 프로그램과 데이터베이스를 독립시키는 것이다. 즉, 개념 스키마가 변겨오디더라도 외부 스키마가 영향을 받지 않는다.
 
 * Logical data is data about database, that is, it stores information about how data is managed inside. For example, a table (relation) stored in the database and all its constraints, applied on that relation.
@@ -124,7 +125,16 @@ REVOKE privilege_name ON object_name FROM {user_name |PUBLIC |role_name};
 GRANT privilege_name ON object_name TO {user_name |PUBLIC |role_name} [WITH GRANT OPTION];
 ```
 
+## ★ Data Modeling (데이터 모델링)
+
+* 현실 세계에 존재하는 데이터를 컴퓨터의 세계의 데이터베이스로 옮기는 변환 과정이다.
+
+* 개념적 데이터 모델링 (Conceptual Data Modeling): 현실 세계의 중요 데이터를 추출하여 개념 세계로 옮기는 작업이다.
+
+* 논리적 데이터 모델링 (Logical Data Modeling): 개념 세계의 데이터를 데이터베이스에 저장하는 구조로 표현한느 작업이다.
+
 ## ★ 개체-관계 다이어그램(Entity-Relationship Diagram)
+
 * An Entity Relationship Diagram (ERD) is **a visual representation of different entities within a system and how they relate to each other.**
 
 * They are widely used to design relational databases. The entities in the ER schema become tables, attributes and converted the database schema. Since they can be used to visualize database tables and their relationships it’s commonly used for database troubleshooting as well.
