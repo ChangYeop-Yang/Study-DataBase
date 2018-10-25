@@ -173,6 +173,31 @@ GRANT privilege_name ON object_name TO {user_name |PUBLIC |role_name} [WITH GRAN
 
 ## ★ DATABASE VIEW
 
+In a database, a view is the result set of a stored query on the data, which the database users can query just as they would in a persistent database collection object. This pre-established query command is kept in the database dictionary. Unlike ordinary base tables in a relational database, a view does not form part of the physical schema: as a result set, it is a virtual table computed or collated dynamically from data in the database when access to that view is requested. Changes applied to the data in a relevant underlying table are reflected in the data shown in subsequent invocations of the view. In some NoSQL databases, views are the only way to query data.
+
+Views can provide advantages over tables:
+
+* Views can represent a subset of the data contained in a table. Consequently, a view can limit the degree of exposure of the underlying tables to the outer world: a given user may have permission to query the view, while denied access to the rest of the base table.
+
+* Views can join and simplify multiple tables into a single virtual table.
+
+* Views can act as aggregated tables, where the database engine aggregates data (sum, average, etc.) and presents the calculated results as part of the data.
+
+* Views can hide the complexity of data. For example, a view could appear as Sales2000 or Sales2001, transparently partitioning the actual underlying table.
+
+* Views take very little space to store; the database contains only the definition of a view, not a copy of all the data that it presents.
+Depending on the SQL engine used, views can provide extra security.
+
+##### ＆ 변경이 불가능한 뷰의 특징
+
+* 기본 테이블의 기본키를 구성하는 속성이 포함되어 있지 않은 뷰는 변경할 수 없다.
+
+* 기본 테이블에 있던 내용이 아니라 집계 합수로 새로 계산된 내용을 포함하고 있는 뷰는 변경할 수 없다.
+
+* DISTINCT 키워드를 포함하여 정의한 뷰는 변경할 수 없다.
+
+* 여러 개의 테이블을 조인하여 정의한 뷰는 변경할 수 없는 경우가 많다.
+
 ## ★ DATABASE Schema
 데이터베이스 스키마(database schema)는 **데이터베이스에서 자료의 구조, 자료의 표현 방법, 자료 간의 관계를 형식 언어로 정의한 구조**이다. 데이터베이스 관리 시스템(DBMS)이 주어진 설정에 따라 데이터베이스 스키마를 생성하며, 데이터베이스 사용자가 자료를 저장, 조회, 삭제, 변경할 때 DBMS는 자신이 생성한 데이터베이스 스키마를 참조하여 명령을 수행한다.
 
