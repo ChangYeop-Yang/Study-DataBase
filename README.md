@@ -201,6 +201,12 @@ Depending on the SQL engine used, views can provide extra security.
 
 * 여러 개의 테이블을 조인하여 정의한 뷰는 변경할 수 없는 경우가 많다.
 
+## ★ DATABASE Trigger
+
+* 데이터베이스 트리거(Database Trigger)는 테이블에 대한 이벤트에 반응해 자동으로 실행되는 작업을 의미한다. 트리거는 데이터 조작 언어(DML)의 데이터 상태의 관리를 자동화하는 데 사용된다. 트리거를 사용하여 데이터 작업 제한, 작업 기록, 변경 작업 감사 등을 할 수 있다.
+
+* A database trigger is procedural code that is automatically executed in response to certain events on a particular table or view in a database. The trigger is mostly used for maintaining the integrity of the information on the database. For example, when a new record (representing a new worker) is added to the employees table, new records should also be created in the tables of the taxes, vacations and salaries. Triggers can also be used to log historical data, for example to keep track of employees' previous salaries.
+
 ## ★ DATABASE Schema
 데이터베이스 스키마(database schema)는 **데이터베이스에서 자료의 구조, 자료의 표현 방법, 자료 간의 관계를 형식 언어로 정의한 구조**이다. 데이터베이스 관리 시스템(DBMS)이 주어진 설정에 따라 데이터베이스 스키마를 생성하며, 데이터베이스 사용자가 자료를 저장, 조회, 삭제, 변경할 때 DBMS는 자신이 생성한 데이터베이스 스키마를 참조하여 명령을 수행한다.
 
