@@ -136,7 +136,7 @@ GRANT privilege_name ON object_name TO {user_name |PUBLIC |role_name} [WITH GRAN
 
 * 개념적 데이터 모델링 (Conceptual Data Modeling): 현실 세계의 중요 데이터를 추출하여 개념 세계로 옮기는 작업이다.
 
-* 논리적 데이터 모델링 (Logical Data Modeling): 개념 세계의 데이터를 데이터베이스에 저장하는 구조로 표현한느 작업이다.
+* 논리적 데이터 모델링 (Logical Data Modeling): 개념 세계의 데이터를 데이터베이스에 저장하는 구조로 표현하는 작업이다.
 
 * * *
 
