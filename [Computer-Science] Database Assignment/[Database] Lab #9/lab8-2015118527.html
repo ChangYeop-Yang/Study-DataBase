@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h2>Lab#8</h2>
+	<h3>:: JSP Practice ::</h3>
+	<h4>GET and POST Methods to Read Form Data</h4>
+	<form action = "getData.jsp" method = "POST">
+		<h4>Provide your information.</h4>
+		StudentID: <input type = "text" name = "sID">
+		<br />
+		First Name: <input type = "text" name = "first_name">
+		<br />
+		Last Name: <input type = "text" name = "last_name">
+		<h4>Select which selection you are taking:</h4>
+		<input type = "checkbox" name = "course" value = "COMP322003"/>COMP322003
+		<input type = "checkbox" name = "course" value = "COMP322004"/>COMP322004
+		<input type = "checkbox" name = "course" value = "none" checked = "checked"/>Nothing
+		<input type = "submit" value = "Submit" />
+	</form>
+
+</body>
+</html>
