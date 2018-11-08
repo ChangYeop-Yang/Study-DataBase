@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>COMP322003/004: Databases</title>
+</head>
+<body>
+	<h2>Lab #9: Repeating Lab #5-3 via JSP</h2>
+	<form action = "response.jsp" method = "POST">
+	
+		<h4>Query 1: Search for emplyees satisfying the following</h4>
+		Project name: <input name="projectName" />	Department number: <select name="dNum">
+																	<option value="1">1</option>
+																	<option value="4">4</option>
+																	<option value="5" selected>5</option>
+																	</select> 
+																	Salary: <input name="Salary" />
+																	
+		<h4>Query 2: Search for emplyees with the following information:</h4>
+		Supervisor's SSN: <input name="SSN" />	Address: <input name="Address" />
+		
+		<h4>Query 3: Search for employees working on:</h4>
+		Project name: <input name="selectProjectName" />
+		
+		</br></br>
+		<input type = "submit" value = "Submit" />
+		<input type = "reset" value = "Reset"/>
+	
+	</form>
+</body>
+</html>
