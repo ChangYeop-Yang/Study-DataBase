@@ -1,4 +1,15 @@
-# DATABASE
+# ■ DATABASE [COMP322]
+
+* This course introduces the fundaemental concepts necessary for designing, using and implementing database systems and database applications. In this course, we learn the fundaementals of database modeling and design, the languages and models provided by the database management systems (DBMSes), and database system implementation techniques. The main goal of this course is to give you in-depth and up-to-date knowledge of of the most important aspects of database systems and applications. Specifically, the major topics of this course is as follows: (1) logical design (relational, semi-structural, NoSQL), (2) DBMS installation and plays, (3) SQL, (4) JDBC programming, (5) indexing, (6) transaction processing, (7) web server programming, and (8) up-to-date technologies including Big Data, MapReduce and Hadoop/Spark if time permits. Through strong lab practices and programming assignments, the students are expected to be more familiar with data management.
+
+## ★ Syllabus for lecture
+
+|Syllabus Image 001|Syllabus Image 002|Syllabus Image 003|
+|:----------------:|:----------------:|:----------------:|
+|![](https://user-images.githubusercontent.com/20036523/46244210-56d62700-c416-11e8-84ec-1ae2655586fe.jpg)|![](https://user-images.githubusercontent.com/20036523/46244211-56d62700-c416-11e8-8263-6537abaea053.jpg)|![](https://user-images.githubusercontent.com/20036523/46244209-56d62700-c416-11e8-8892-756210071a17.jpg)|
+
+#### # DATABASE Feature (데이터베이스 특징)
+
 체계화된 데이터의 모임이다. 즉, 작성된 목록으로써 여러 응용 시스템들의 통합 된 정보들을 저장하여 운영할 수 있는 공용 데이터들의 묶음이다.
 
 * 공용 데이터 (Shared Data) : 다양한 사용자들이 필요한 정보를 공동으로 이용할 목적으로 만들어진 자료이다.
@@ -9,7 +20,7 @@
 
 * 저장 데이터 (Stored Data) : 컴퓨터 시스템이 접근 가능한 저장 매체에 저당 된 데이터의 집합이다.
 
-#### # DATABASE Feature (데이터베이스 특징)
+* * *
 
 * 실시간 접근성 (Real-Time Accessibility) : 수시적이고 비정형적인 질의(query)에 대하여 실시간 처리로 응답할 수 있어야 한다.
 
