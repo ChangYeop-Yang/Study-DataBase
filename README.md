@@ -434,6 +434,16 @@ NoSQL 데이터베이스는 탁월한 사용자 경험을 제공하기 위하여
 - Document DB : Lotus Notes에서 유래되었으며, JSON, XML과 같은 Collection 데이터 모델 구조를 채택하고 있습니다. MongoDB, CoughDB가 이 종류에 해당합니다.
 - Graph DB : Euler & Graph Theory에서 유래한 DB입니다. Nodes, Relationship, Key-Value 데이터 모델을 채용하고 있습니다. Neo4J, OreientDB 등의 제품이 있습니다.
 
+## ★ Big Data (빅데이터) - [네이버 지식백과] 빅데이터의 속성 3V, 4V (국립중앙과학관 - 빅데이터, 국립중앙과학관)
+
+* 빅 데이터(영어: big data)란 기존 데이터베이스 관리도구의 능력을 넘어서는 대량(수십 테라바이트)의 정형 또는 심지어 데이터베이스 형태가 아닌 비정형의 데이터 집합조차 포함한 데이터로부터 가치를 추출하고 결과를 분석하는 기술이다.
+
+<p align="center">
+    <img src="https://dbscthumb-phinf.pstatic.net/4412_000_1/20160427154731664_IMPS29TWY.jpg/s_sm2_4_i1.jpg?type=w340_fst_n&wm=Y" />
+</p>
+
+* 빅데이터의 공통적 특징은 3V로 설명할 수 있다. 3V는 데이터의 크기(Volume), 데이터의 속도(Velocity), 데이터의 다양성(variety)을 나타내며 이러한 세 가지 요소의 측면에서 빅데이터는 기존의 데이터베이스와 차별화된다. 데이터 크기(Volume)는 단순 저장되는 물리적 데이터양을 나타내며 빅데이터의 가장 기본적인 특징이다. 데이터 속도(Velocity)는 데이터의 고도화된 실시간 처리를 뜻한다. 이는 데이터가 생성되고, 저장되며, 시각화되는 과정이 얼마나 빠르게 이뤄져야 하는지에 대한 중요성을 나타낸다. 다양성(Variety)은 다양한 형태의 데이터를 포함하는 것을 뜻한다. 정형 데이터뿐만 아니라 사진, 오디오, 비디오, 소셜 미디어 데이터, 로그 파일 등과 같은 비정형 데이터도 포함된다.
+
 ## ★ REFERENCE
 :smile: [Reference URL Site List](https://github.com/ChangYeop-Yang/Study-DataBase/issues/4)
 
