@@ -236,7 +236,7 @@ Depending on the SQL engine used, views can provide extra security.
 
 * * *
 
-#### ※ ACID - [네이버 지식백과] 트랜잭션의 특성 (데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주))
+#### ※ ACID - [[네이버 지식백과] 트랜잭션의 특성 (데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주))](https://terms.naver.com/entry.nhn?docId=3431259&cid=58430&categoryId=58430&expCategoryId=58430)
 
 ACID(원자성, 일관성, 독립성, 지속성)는 데이터베이스 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 성질을 가리키는 약어이다.
 
@@ -250,7 +250,7 @@ ACID(원자성, 일관성, 독립성, 지속성)는 데이터베이스 트랜잭
 
 * * *
 
-#### ※ Transcation State - [네이버 지식백과] 트랜잭션의 상태 (데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주))
+#### ※ Transcation State - [[네이버 지식백과] 트랜잭션의 상태 (데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주))](https://terms.naver.com/entry.nhn?docId=3431266&cid=58430&categoryId=58430&expCategoryId=58430)
 
 <p align="center">
     <img src="https://dbscthumb-phinf.pstatic.net/4515_000_1/20160715113213613_AAUXOR2U4.jpg/ka26_202_i1.jpg?type=w406_fst_n&wm=Y" />
