@@ -449,21 +449,31 @@ NoSQL 데이터베이스는 탁월한 사용자 경험을 제공하기 위하여
 * * *
 
 * 유연성: NoSQL 데이터베이스는 일반적으로 유연한 스키마를 제공하여 보다 빠르고 반복적인 개발을 가능하게 해줍니다. 이같은 유연한 데이터 모델은 NoSQL 데이터베이스를 반정형 및 비정형 데이터에 이상적으로 만들어 줍니다.
+
 * 확장성: NoSQL 데이터베이스는 일반적으로 고가의 강력한 서버를 추가하는 대신 분산형 하드웨어 클러스터를 이용해 확장하도록 설계되었습니다. 일부 클라우드 제공자들은 완전관리형 서비스로서 이런 운영 작업을 보이지 않게 처리합니다.
+
 * 고성능: NoSQL 데이터베이스는 특정 데이터 모델(문서, 키 값, 그래프 등) 및 액세스 패턴에 대해 최적화되어 관계형 데이터베이스를 통해 유사한 기능을 충족하려 할 때보다 뛰어난 성능을 얻게 해줍니다.
+
 * 고기능성: NoSQL 데이터베이스는 각 데이터 모델에 맞추어 특별히 구축된 뛰어난 기능의 API와 데이터 유형을 제공합니다.
 
 #### # NoSQL Database Types
+
 1. Key-value stores are the simplest NoSQL databases. Every single item in the database is stored as an attribute name, or key, together with its value. Examples of key-value stores are Riak and Voldemort. Some key-value stores, such as Redis, allow each value to have a type, such as "integer", which adds functionality.
+
 2. Document databases pair each key with a complex data structure known as a document. Documents can contain many different key-value pairs, or key-array pairs, or even nested documents.
+
 3. Wide-column stores such as Cassandra and HBase are optimized for queries over large datasets, and store columns of data together, instead of rows.
+
 4. Graph stores are used to store information about networks, such as social connections. Graph stores include Neo4J and HyperGraphDB.
 
 * * *
 
 - Key Value DB : Key와 Value의 쌍으로 데이터가 저장되는 가장 단순한 형태의 솔루션으로 Amazon의 Dynamo Paper에서 유래되었습니다. Riak, Vodemort, Tokyo 등의 제품이 많이 알려져 있습니다.
+
 - Wide Columnar Store : Big Table DB라고도 하며, Google의 BigTable Paper에서 유래되었습니다. Key Value 에서 발전된 형태의 Column Family 데이터 모델을 사용하고 있고, HBase, Cassandra, ScyllaDB 등이 이에 해당합니다.
+
 - Document DB : Lotus Notes에서 유래되었으며, JSON, XML과 같은 Collection 데이터 모델 구조를 채택하고 있습니다. MongoDB, CoughDB가 이 종류에 해당합니다.
+
 - Graph DB : Euler & Graph Theory에서 유래한 DB입니다. Nodes, Relationship, Key-Value 데이터 모델을 채용하고 있습니다. Neo4J, OreientDB 등의 제품이 있습니다.
 
 ## ★ Big Data (빅데이터) - [네이버 지식백과] 빅데이터의 속성 3V, 4V (국립중앙과학관 - 빅데이터, 국립중앙과학관)
@@ -475,6 +485,14 @@ NoSQL 데이터베이스는 탁월한 사용자 경험을 제공하기 위하여
 </p>
 
 * 빅데이터의 공통적 특징은 3V로 설명할 수 있다. 3V는 데이터의 크기(Volume), 데이터의 속도(Velocity), 데이터의 다양성(variety)을 나타내며 이러한 세 가지 요소의 측면에서 빅데이터는 기존의 데이터베이스와 차별화된다. 데이터 크기(Volume)는 단순 저장되는 물리적 데이터양을 나타내며 빅데이터의 가장 기본적인 특징이다. 데이터 속도(Velocity)는 데이터의 고도화된 실시간 처리를 뜻한다. 이는 데이터가 생성되고, 저장되며, 시각화되는 과정이 얼마나 빠르게 이뤄져야 하는지에 대한 중요성을 나타낸다. 다양성(Variety)은 다양한 형태의 데이터를 포함하는 것을 뜻한다. 정형 데이터뿐만 아니라 사진, 오디오, 비디오, 소셜 미디어 데이터, 로그 파일 등과 같은 비정형 데이터도 포함된다.
+
+## ★ Buffer (버퍼)
+
+* 버퍼란 어떤 장치에서 다른 장치로 데이터를 송신할 때 일어나는 시간의 차이나 데이터 흐름의 속도 차이를 조정하기 위해 일시적으로 데이터를 기억시키는 장치이다.
+
+###### ※ 싱글버퍼(single buffer)의 경우 채널이 데이터를 버퍼에 저장하면 프로세서가 처리하는 방식으로 진행된다. 이경우 채널이 데이터를 저장하는 동안에는 데이터에 대한 처리가 이루어질 수 없으며, 프로세서가 데이터를 처리하는 동안에는 다른 데이터가 저장될 수 없게된다.
+
+###### ※ 더블버퍼(double buffer)의 경우에는 데이터에 대한 저장과 처리가 동시에 일어날 수 있다. 입력채널이 첫 번째 버퍼에 데이터를 저장하는 동안 프로세서가 두 번째 버퍼의 데이터를 처리할 수 있는 것이다. 이렇게 두개의 버퍼를 서로 교대로 사용하는 것을 플립플롭버퍼링(flip-flop buffering)이라하고, 여러개의 버퍼를 번갈아 사용하는 것을 순환버퍼링(circular buffering)이라고 한다.
 
 ## ★ REFERENCE
 :smile: [Reference URL Site List](https://github.com/ChangYeop-Yang/Study-DataBase/issues/4)
