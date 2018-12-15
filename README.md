@@ -495,6 +495,13 @@ NoSQL 데이터베이스는 탁월한 사용자 경험을 제공하기 위하여
 ###### ※ 더블버퍼(double buffer)의 경우에는 데이터에 대한 저장과 처리가 동시에 일어날 수 있다. 입력채널이 첫 번째 버퍼에 데이터를 저장하는 동안 프로세서가 두 번째 버퍼의 데이터를 처리할 수 있는 것이다. 이렇게 두개의 버퍼를 서로 교대로 사용하는 것을 플립플롭버퍼링(flip-flop buffering)이라하고, 여러개의 버퍼를 번갈아 사용하는 것을 순환버퍼링(circular buffering)이라고 한다.
 
 ## ★ REFERENCE
+
 :smile: [Reference URL Site List](https://github.com/ChangYeop-Yang/Study-DataBase/issues/4)
 
-:smiley: [Reference Book Site List](https://github.com/ChangYeop-Yang/Study-DataBase/issues/5) 
+:smiley: [Reference Book Site List](https://github.com/ChangYeop-Yang/Study-DataBase/issues/5)
+
+## ★ Developer Information
+
+|Github QR Code|Naver-Blog QR Code|Linked-In QR Code|
+|:------------:|:---------------:|:---------------:|
+|![](https://user-images.githubusercontent.com/20036523/50044128-60406880-00c2-11e9-8d57-ea1cb8e6b2a7.jpg)|![](https://user-images.githubusercontent.com/20036523/50044131-60d8ff00-00c2-11e9-818c-cf5ad97dc76e.jpg)|![](https://user-images.githubusercontent.com/20036523/50044130-60d8ff00-00c2-11e9-991a-107bffa2bf57.jpg)|
