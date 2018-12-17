@@ -1,4 +1,4 @@
-# ■ DATABASE [COMP322]
+# ■ DATABASE [COMP322] <kbd>[Kyungpook National University](http://www.knu.ac.kr/wbbs/)</kbd>
 
 * This course introduces the fundaemental concepts necessary for designing, using and implementing database systems and database applications. In this course, we learn the fundaementals of database modeling and design, the languages and models provided by the database management systems (DBMSes), and database system implementation techniques. The main goal of this course is to give you in-depth and up-to-date knowledge of of the most important aspects of database systems and applications. Specifically, the major topics of this course is as follows: (1) logical design (relational, semi-structural, NoSQL), (2) DBMS installation and plays, (3) SQL, (4) JDBC programming, (5) indexing, (6) transaction processing, (7) web server programming, and (8) up-to-date technologies including Big Data, MapReduce and Hadoop/Spark if time permits. Through strong lab practices and programming assignments, the students are expected to be more familiar with data management.
 
