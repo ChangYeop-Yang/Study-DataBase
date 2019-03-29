@@ -10,23 +10,21 @@
 
 #### :key: 데이터베이스의 특징 (Database Feature)
 
-체계화된 데이터의 모임이다. 즉, 작성된 목록으로써 여러 응용 시스템들의 통합 된 정보들을 저장하여 운영할 수 있는 공용 데이터들의 묶음이다.
+* 공용 데이터 (Shared Data) : 다양한 사용자들이 필요한 정보를 공동으로 이용할 목적으로 만들어진 자료이다.
 
-* :one: 공용 데이터 (Shared Data) : 다양한 사용자들이 필요한 정보를 공동으로 이용할 목적으로 만들어진 자료이다.
+* 운영 데이터 (Operational Data) : 한 조직체가 유지되고 운영되는데 필요한 모든 개체 데이터와 관계 데이터의 집합이다.
 
-* :two: 운영 데이터 (Operational Data) : 한 조직체가 유지되고 운영되는데 필요한 모든 개체 데이터와 관계 데이터의 집합이다.
+* 통합 데이터 (Integrated Data) : 데이터 집단에서 자료의 중복이나 군더더기를 제거하여 최적화시킨 데이터의 집합이다.
 
-* :three: 통합 데이터 (Integrated Data) : 데이터 집단에서 자료의 중복이나 군더더기를 제거하여 최적화시킨 데이터의 집합이다.
+* 저장 데이터 (Stored Data) : 컴퓨터 시스템이 접근 가능한 저장 매체에 저당 된 데이터의 집합이다.
 
-* :four: 저장 데이터 (Stored Data) : 컴퓨터 시스템이 접근 가능한 저장 매체에 저당 된 데이터의 집합이다.
+* 실시간 접근성 (Real-Time Accessibility) : 수시적이고 비정형적인 질의(query)에 대하여 실시간 처리로 응답할 수 있어야 한다.
 
-* :five: 실시간 접근성 (Real-Time Accessibility) : 수시적이고 비정형적인 질의(query)에 대하여 실시간 처리로 응답할 수 있어야 한다.
+* 지속적인 변화 (Continuous Evolution) : 새로운 데이터의 삽입(insertion), 기존 데이터의 삭제(deletion), 갱신(update)으로 항상 그 내용이 변하고, 또 그 속에서 현재의 정확한 데이터를 유지해야 한다.
 
-* :six: 지속적인 변화 (Continuous Evolution) : 새로운 데이터의 삽입(insertion), 기존 데이터의 삭제(deletion), 갱신(update)으로 항상 그 내용이 변하고, 또 그 속에서 현재의 정확한 데이터를 유지해야 한다.
+* 동시 공유 (Concurrent Sharing) : 같은 내용의 데이터를 여러 사람이 서로 다른 방법으로 동시에 공용할 수 있어야 한다.
 
-* :seven: 동시 공유 (Concurrent Sharing) : 같은 내용의 데이터를 여러 사람이 서로 다른 방법으로 동시에 공용할 수 있어야 한다.
-
-* :eight: 내용에 대한 참조 (Contents Reference) : 데이터베이스 내에 있는 데이터 레코드들은 주소나 위치에 의해서가 아니라 사용자가 요구하는 데이터의 내용에 따라 참조해야 한다.
+* 내용에 대한 참조 (Contents Reference) : 데이터베이스 내에 있는 데이터 레코드들은 주소나 위치에 의해서가 아니라 사용자가 요구하는 데이터의 내용에 따라 참조해야 한다.
 
 #### :key: 데이터베이스의 장점과 단점 (Database Advantage And Disadvantage)
 |:thumbsup: DATABASE Advantage|:thumbsdown: DATABASE Disadvantage|
@@ -176,11 +174,13 @@ GRANT privilege_name ON object_name TO {user_name |PUBLIC |role_name} [WITH GRAN
 
 * A system catalog is a group of tables and views that incorporate vital details regarding a database. Every database comprised of a system catalog and the information in the system catalog specifies the framework of the database. For instance, the data dictionary language (DDL) for every table in the database is saved in the system catalog.
 
-## :mega: 뷰 (VIEW)
+## :mega: 뷰 (View) - [[네이버 지식백과] 뷰의 개념 (데이터베이스 개론, 2013. 6. 30., 김연희)](https://terms.naver.com/entry.nhn?docId=3431211&cid=58430&categoryId=58430)
 
-In a database, a view is the result set of a stored query on the data, which the database users can query just as they would in a persistent database collection object. This pre-established query command is kept in the database dictionary. Unlike ordinary base tables in a relational database, a view does not form part of the physical schema: as a result set, it is a virtual table computed or collated dynamically from data in the database when access to that view is requested. Changes applied to the data in a relevant underlying table are reflected in the data shown in subsequent invocations of the view. In some NoSQL databases, views are the only way to query data.
+* 뷰(view)는 다른 테이블을 기반으로 만들어진 가상 테이블(virtual table)이다. 뷰를 가상 테이블이라고 하는 이유는 일반 테이블과 달리 데이터를 실제로 저장하고 있지 않기 때문이다. 물리적으로 존재하면서 실제로 데이터를 저장하는 일반 테이블과는 다르게 뷰는 논리적으로만 존재하면서도 일반 테이블과 동일한 방법으로 사용할 수 있어 사용자는 차이를 느끼기 어렵다.
 
-Views can provide advantages over tables:
+* In a database, a view is the result set of a stored query on the data, which the database users can query just as they would in a persistent database collection object. This pre-established query command is kept in the database dictionary. Unlike ordinary base tables in a relational database, a view does not form part of the physical schema: as a result set, it is a virtual table computed or collated dynamically from data in the database when access to that view is requested. Changes applied to the data in a relevant underlying table are reflected in the data shown in subsequent invocations of the view. In some NoSQL databases, views are the only way to query data.
+
+##### :zap: 뷰의 장점 (View Advantage)
 
 * Views can represent a subset of the data contained in a table. Consequently, a view can limit the degree of exposure of the underlying tables to the outer world: a given user may have permission to query the view, while denied access to the rest of the base table.
 
@@ -190,59 +190,61 @@ Views can provide advantages over tables:
 
 * Views can hide the complexity of data. For example, a view could appear as Sales2000 or Sales2001, transparently partitioning the actual underlying table.
 
-* Views take very little space to store; the database contains only the definition of a view, not a copy of all the data that it presents.
-Depending on the SQL engine used, views can provide extra security.
+* Views take very little space to store; the database contains only the definition of a view, not a copy of all the data that it presents. Depending on the SQL engine used, views can provide extra security.
 
-##### ＆ 변경이 불가능한 뷰의 특징
+##### :zap: 변경이 불가능한 뷰의 특징
 
 * 기본 테이블의 기본키를 구성하는 속성이 포함되어 있지 않은 뷰는 변경할 수 없다.
 
 * 기본 테이블에 있던 내용이 아니라 집계 합수로 새로 계산된 내용을 포함하고 있는 뷰는 변경할 수 없다.
 
+* GROUP BY 절을 포함하여 정의한 뷰는 변경할 수 없다.
+
 * DISTINCT 키워드를 포함하여 정의한 뷰는 변경할 수 없다.
 
 * 여러 개의 테이블을 조인하여 정의한 뷰는 변경할 수 없는 경우가 많다.
 
-## ★ DATABASE Trigger
+## :mega: 트리거 (Database Trigger) - [[네이버 지식백과] 트리거 [trigger] (두산백과)](https://terms.naver.com/entry.nhn?docId=3347639&cid=40942&categoryId=32840)
 
-* 데이터베이스 트리거(Database Trigger)는 테이블에 대한 이벤트에 반응해 자동으로 실행되는 작업을 의미한다. 트리거는 데이터 조작 언어(DML)의 데이터 상태의 관리를 자동화하는 데 사용된다. 트리거를 사용하여 데이터 작업 제한, 작업 기록, 변경 작업 감사 등을 할 수 있다.
+* 데이터베이스 트리거(Database Trigger)는 **테이블에 대한 이벤트에 반응해 자동으로 실행되는 작업**을 의미한다. **트리거는 데이터 조작 언어(DML)의 데이터 상태의 관리를 자동화하는 데 사용된다.** 트리거를 사용하여 데이터 작업 제한, 작업 기록, 변경 작업 감사 등을 할 수 있다.
+
+* 데이터베이스 트리거는 트리거 테이블에 어떠한 변화(이벤트)가 일어나면 이에 따라 자동으로 실행되는 작업으로, 데이터의 상태를 자동을 관리하여 데이터베이스 상의 정보의 무결성(integrity)을 유지하는데 사용된다. 예를 들어 새로운 고객이 고객 테이블에 등록되는 경우 고객수와 관련된 총 고객수 값이 자동으로 증가되도록 트리거를 정의할 수 있다.
 
 * A database trigger is procedural code that is automatically executed in response to certain events on a particular table or view in a database. The trigger is mostly used for maintaining the integrity of the information on the database. For example, when a new record (representing a new worker) is added to the employees table, new records should also be created in the tables of the taxes, vacations and salaries. Triggers can also be used to log historical data, for example to keep track of employees' previous salaries.
 
-## ★ DATABASE Schema
-데이터베이스 스키마(database schema)는 **데이터베이스에서 자료의 구조, 자료의 표현 방법, 자료 간의 관계를 형식 언어로 정의한 구조**이다. 데이터베이스 관리 시스템(DBMS)이 주어진 설정에 따라 데이터베이스 스키마를 생성하며, 데이터베이스 사용자가 자료를 저장, 조회, 삭제, 변경할 때 DBMS는 자신이 생성한 데이터베이스 스키마를 참조하여 명령을 수행한다.
+## :mega: 스키마 (Database Schema)
 
-|Schema Name|Description|
-|:---------:|:---------:|
-|외부 스키마(External Schema)|프로그래머나 사용자의 입장에서 데이터베이스의 모습으로 조직의 일부분을 정의한 것|
-|개념 스키마(Conceptual Schema)|모든 응용 시스템과 사용자들이 필요로하는 데이터를 통합한 조직 전체의 데이터베이스 구조를 논리적으로 정의한 것|
-|내부 스키마(Internal Schema)|전체 데이터베이스의 물리적 저장 형태를 기술하는 것|
+* 데이터베이스 스키마(database schema)는 **데이터베이스에서 자료의 구조, 자료의 표현 방법, 자료 간의 관계를 형식 언어로 정의한 구조**이다. 데이터베이스 관리 시스템(DBMS)이 주어진 설정에 따라 데이터베이스 스키마를 생성하며, 데이터베이스 사용자가 자료를 저장, 조회, 삭제, 변경할 때 DBMS는 자신이 생성한 데이터베이스 스키마를 참조하여 명령을 수행한다.
 
-## ★ DATABASE Transation
+* 외부 스키마(External Schema) : 프로그래머나 사용자의 입장에서 데이터베이스의 모습으로 조직의 일부분을 정의한 것이다.
+
+* 개념 스키마(Conceptual Schema) : 모든 응용 시스템과 사용자들이 필요로하는 데이터를 통합한 조직 전체의 데이터베이스 구조를 논리적으로 정의한 것이다.
+
+* 내부 스키마(Internal Schema) : 전체 데이터베이스의 물리적 저장 형태를 기술하는 것이다.
+
+## :mega: 트랜젝션 (Database Transation)
 
 * 트랜잭션은 **하나의 논리적 단위를 구성하는 데이터베이스 연산의 모임**이다. 동시에 여러 트랜잭션이 수행되기 위해서 데이터베이스의 일관성이 보장되어야 하며 이를 위해 동시성 제어(concurrency control)와 회복 제어(recovery control)를 위한 모듈이 있으며 이 둘을 합쳐 트랜잭션 관리 모듈(transaction management module)이라고 한다. 데이터베이스 시스템은 각각의 트랜잭션에 대해 **원자성(Atomicity), 일관성(Consistency), 독립성(Isolation), 영구성(Durability)** 을 보장한다.
 
-* 동시성제어 모듈(concurreny control module): 데이터베이스를 일관성 있게 유지하기 위하여 동시에 수행되는 트랜잭션들 사이의 상호작용을 제어한다.
+* 동시성제어 모듈(concurreny control module) : 데이터베이스를 일관성 있게 유지하기 위하여 동시에 수행되는 트랜잭션들 사이의 상호작용을 제어한다.
 
-* 회복제어 모듈(recovery control module): 데이터베이스를 일관성 있게 유지하기 위하여 업데이트를 하는 동안 시스템 장애에도 데이터베이스의 기존 상태가 유지된다.
+* 회복제어 모듈(recovery control module) : 데이터베이스를 일관성 있게 유지하기 위하여 업데이트를 하는 동안 시스템 장애에도 데이터베이스의 기존 상태가 유지된다.
 
-* * *
-
-#### ※ ACID - [[네이버 지식백과] 트랜잭션의 특성 (데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주))](https://terms.naver.com/entry.nhn?docId=3431259&cid=58430&categoryId=58430&expCategoryId=58430)
+##### :zap: 트랜젝션 ACID (Database Transation ACID) - [[네이버 지식백과] 트랜잭션의 특성 (데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주))](https://terms.naver.com/entry.nhn?docId=3431259&cid=58430&categoryId=58430&expCategoryId=58430)
 
 ACID(원자성, 일관성, 독립성, 지속성)는 데이터베이스 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 성질을 가리키는 약어이다.
 
-* **원자성(Atomicity)** : **트랜잭션과 관련된 작업들이 부분적으로 실행되다가 중단되지 않는 것을 보장하는 능력**이다. 예를 들어, 자금 이체는 성공할 수도 실패할 수도 있지만 보내는 쪽에서 돈을 빼 오는 작업만 성공하고 받는 쪽에 돈을 넣는 작업을 실패해서는 안된다. 원자성은 이와 같이 중간 단계까지 실행되고 실패하는 일이 없도록 하는 것이다.
+* 원자성(Atomicity) : **트랜잭션과 관련된 작업들이 부분적으로 실행되다가 중단되지 않는 것을 보장하는 능력**이다. 예를 들어, 자금 이체는 성공할 수도 실패할 수도 있지만 보내는 쪽에서 돈을 빼 오는 작업만 성공하고 받는 쪽에 돈을 넣는 작업을 실패해서는 안된다. 원자성은 이와 같이 중간 단계까지 실행되고 실패하는 일이 없도록 하는 것이다.
 
-* **일관성(Consistency)** : **트랜잭션이 실행을 성공적으로 완료하면 언제나 일관성 있는 데이터베이스 상태로 유지하는 것을 의미**한다. 무결성 제약이 모든 계좌는 잔고가 있어야 한다면 이를 위반하는 트랜잭션은 중단된다.
+* 일관성(Consistency) : **트랜잭션이 실행을 성공적으로 완료하면 언제나 일관성 있는 데이터베이스 상태로 유지하는 것을 의미**한다. 무결성 제약이 모든 계좌는 잔고가 있어야 한다면 이를 위반하는 트랜잭션은 중단된다.
 
-* **독립성(Isolation)** : **트랜잭션을 수행 시 다른 트랜잭션의 연산 작업이 끼어들지 못하도록 보장하는 것을 의미**한다. 이것은 트랜잭션 밖에 있는 어떤 연산도 중간 단계의 데이터를 볼 수 없음을 의미한다. 은행 관리자는 이체 작업을 하는 도중에 쿼리를 실행하더라도 특정 계좌간 이체하는 양 쪽을 볼 수 없다. 공식적으로 독립성은 트랜잭션 실행내역은 연속적이어야 함을 의미한다. 성능관련 이유로 인해 이 특성은 가장 유연성 있는 제약 조건이다. 자세한 내용은 관련 문서를 참조해야 한다.
+* 독립성(Isolation) : **트랜잭션을 수행 시 다른 트랜잭션의 연산 작업이 끼어들지 못하도록 보장하는 것을 의미**한다. 이것은 트랜잭션 밖에 있는 어떤 연산도 중간 단계의 데이터를 볼 수 없음을 의미한다. 은행 관리자는 이체 작업을 하는 도중에 쿼리를 실행하더라도 특정 계좌간 이체하는 양 쪽을 볼 수 없다. 공식적으로 독립성은 트랜잭션 실행내역은 연속적이어야 함을 의미한다. 성능관련 이유로 인해 이 특성은 가장 유연성 있는 제약 조건이다. 자세한 내용은 관련 문서를 참조해야 한다.
 
-* **지속성(Durability)** : **성공적으로 수행된 트랜잭션은 영원히 반영되어야 함을 의미**한다. 시스템 문제, DB 일관성 체크 등을 하더라도 유지되어야 함을 의미한다. 전형적으로 모든 트랜잭션은 로그로 남고 시스템 장애 발생 전 상태로 되돌릴 수 있다. 트랜잭션은 로그에 모든 것이 저장된 후에만 commit 상태로 간주될 수 있다.
+* 지속성(Durability) : **성공적으로 수행된 트랜잭션은 영원히 반영되어야 함을 의미**한다. 시스템 문제, DB 일관성 체크 등을 하더라도 유지되어야 함을 의미한다. 전형적으로 모든 트랜잭션은 로그로 남고 시스템 장애 발생 전 상태로 되돌릴 수 있다. 트랜잭션은 로그에 모든 것이 저장된 후에만 commit 상태로 간주될 수 있다.
 
 * * *
 
-#### ※ Transcation State - [[네이버 지식백과] 트랜잭션의 상태 (데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주))](https://terms.naver.com/entry.nhn?docId=3431266&cid=58430&categoryId=58430&expCategoryId=58430)
+##### :zap: 트랜잭션의 상태 (Transcation State) - [[네이버 지식백과] 트랜잭션의 상태 (데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주))](https://terms.naver.com/entry.nhn?docId=3431266&cid=58430&categoryId=58430&expCategoryId=58430)
 
 <p align="center">
     <img src="https://dbscthumb-phinf.pstatic.net/4515_000_1/20160715113213613_AAUXOR2U4.jpg/ka26_202_i1.jpg?type=w406_fst_n&wm=Y" />
@@ -270,54 +272,54 @@ ACID(원자성, 일관성, 독립성, 지속성)는 데이터베이스 트랜잭
 
 * 트랜잭션의 수행이 실패하여 rollback 연산을 실행한 상태를 철회(aborted) 상태라고 한다. 트랜잭션이 철회 상태가 되면 지금까지 실행한 트랜잭션의 연산을 모두 취소하고 트랜잭션이 수행되기 전의 데이터베이스 상태로 되돌리면서 트랜잭션이 종료된다. 철회 상태로 종료된 트랜잭션은 상황에 따라 다시 수행되거나 폐기된다. 트랜잭션의 내부 문제가 아닌, 하드웨어의 이상이나 소프트웨어의 오류로 트랜잭션의 수행이 중단되고 철회 상태가 된 경우에는 철회된 트랜잭션을 다시 시작한다. 하지만 트랜잭션이 처리하려는 데이터가 데이터베이스에 존재하지 않거나 트랜잭션의 논리적인 오류가 원인인 경우에는 철회된 트랜잭션을 폐기한다.
 
-## ★ DATABASE Anomaly
+## ★ 데이터베이스 이상현상 (Database Anomaly) - [데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주)](https://terms.naver.com/entry.nhn?docId=3431240&cid=58430&categoryId=58430&expCategoryId=58430)
 
-|Insert Anomaly|Delete Anomaly|Update Anomaly|
-|:------------:|:------------:|:------------:|
+* 데이터베이스를 잘못 설계하면 불필요한 데이터 중복이 발생하여 릴레이션에 대한 데이터의 삽입·수정·삭제 연산을 수행할 때 부작용들이 발생할 수 있다. 이러한 부작용을 이상(anomaly) 현상이라 한다.
+
+|:cat: Insert Anomaly|:cat: Delete Anomaly|:cat: Update Anomaly|
+|:------------------:|:------------------:|:------------------:|
 |![](https://dbscthumb-phinf.pstatic.net/4515_000_1/20160715113056392_1YD7LELPI.jpg/ka26_178_i1.jpg?type=w530_fst_n&wm=Y)|![](https://dbscthumb-phinf.pstatic.net/4515_000_1/20160715113058979_9EUZ4XZZO.jpg/ka26_180_i1.jpg?type=w530_fst_n&wm=Y)|![](https://dbscthumb-phinf.pstatic.net/4515_000_1/20160715113057846_NY929L390.jpg/ka26_179_i1.jpg?type=w530_fst_n&wm=Y)|
 
-#### ※ Insert Anomaly - 삽입 이상 (데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주))
+##### :zap: 삽입 이상 (Insert Anomaly)
 
-* 릴레이션에 새 데이터를 삽입하기 위해 원치 않는 불필요한 데이터도 함께 삽입해야 하는 문제를 삽입 이상(insertion anomaly)이라 한다.
+* **릴레이션에 새 데이터를 삽입하기 위해 원치 않는 불필요한 데이터도 함께 삽입해야 하는 문제를 삽입 이상(insertion anomaly)이라 한다.**
 
 * 예를 들어 아이디가 melon이고, 이름이 성원용, 등급이 gold인 신규 고객이 회원으로 가입하여, 이상 현상의 종류의 [이상 현상 설명을 위한 릴레이션의 예]의 이벤트참여 릴레이션에 이 고객에 대한 데이터를 삽입해야 한다고 해보자. 이 고객이 참여한 이벤트가 아직 없다면 이벤트참여 릴레이션에 이 고객에 대한 데이터를 삽입할 수 없다. 이벤트참여 릴레이션의 기본키가 고객아이디와 이벤트번호 속성이고, 기본키를 구성하는 속성은 널 값을 가질 수 없다는 제약이 존재하기 때문이다. 즉, 고객아이디와 참여한 이벤트번호가 모두 존재해야 이벤트참여 릴레이션에 새 고객의 데이터를 삽입할 수 있다. 따라서 성원용 고객에 대한 데이터를 이벤트참여 릴레이션에 삽입하려면 실제로 참여하지 않은 임시 이벤트번호를 삽입해야 하므로 이벤트참여 릴레이션에는 삽입 이상이 발생하게 된다.
 
-* * *
+##### :zap: 삭제 이상 (Delete Anomaly)
 
-#### ※ Delete Anomaly - 삭제 이상 (데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주))
-
-* 릴레이션에서 투플을 삭제하면 꼭 필요한 데이터까지 함께 삭제하여 데이터가 손실되는 연쇄 삭제 현상을 삭제 이상(delete anomaly)이라 한다.
+* **릴레이션에서 투플을 삭제하면 꼭 필요한 데이터까지 함께 삭제하여 데이터가 손실되는 연쇄 삭제 현상을 삭제 이상(delete anomaly)이라 한다.**
 
 * 아이디가 orange인 고객이 이벤트 참여를 취소하여 이상 현상의 종류의 [이상 현상 설명을 위한 릴레이션의 예]의 이벤트참여 릴레이션에서 관련된 투플을 삭제해야 한다면, [그림 9-3]과 같이 하나의 투플만 삭제하면 된다. 그런데 이 투플은 아이디가 orange인 고객이 참여하고 있는 이벤트에 대한 정보만 가지고 있는 것이 아니라 해당 고객에 대한 정보인 고객아이디·고객이름·등급에 대한 정보도 유일하게 가지고 있다. 따라서 이 투플이 삭제되면 이벤트 참여와 관련이 없음에도 불구하고 해당 고객에 대한 고객아이디·고객이름·등급 데이터까지 원치 않게 손실되는 삭제 이상이 발생하게 된다.
 
-* * *
+##### :zap: 갱신 이상 (Update Anomaly)
 
-#### ※ Update Anomaly - 갱신 이상 (데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주))
-
-* 릴레이션의 중복된 투플들 중 일부만 수정하여 데이터가 불일치하게 되는 모순이 발생하는 것을 갱신 이상(update anomaly)이라 한다.
+* **릴레이션의 중복된 투플들 중 일부만 수정하여 데이터가 불일치하게 되는 모순이 발생하는 것을 갱신 이상(update anomaly)이라 한다.**
 
 * 이상 현상의 종류의 [이상 현상 설명을 위한 릴레이션의 예]의 이벤트참여 릴레이션에는 아이디가 apple인 고객에 대한 투플이 세 개 존재하여, 고객아이디·고객이름·등급 속성의 값이 중복되어 있다. 아이디가 apple인 고객의 등급이 gold에서 vip로 변경된다면, 이벤트참여 릴레이션에서 apple 고객에 대한 투플 세 개의 등급 속성 값이 모두 수정되어야 한다. 그렇지 않고 [그림 9-2]와 같이 두 개의 투플만 등급이 수정되면 apple 고객이 서로 다른 등급을 가지는 모순이 생겨 갱신 이상이 발생하게 된다.
 
-## ★ 정규화 (Nomalization) - [[네이버 지식백과] 정규화 (데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주))](https://terms.naver.com/entry.nhn?docId=3431238&cid=58430&categoryId=58430)
+## :mega: 정규화 (Nomalization) - [[네이버 지식백과] 정규화 (데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주))](https://terms.naver.com/entry.nhn?docId=3431238&cid=58430&categoryId=58430)
 
 <p align="center">
     <img src="https://dbscthumb-phinf.pstatic.net/4515_000_1/20160715113053350_618T3Z8RC.jpg/ka26_174_i2.jpg?type=w690_fst_n&wm=Y" />
 </p>
 
-* 함수 종속성을 이용하여, 릴레이션을 연관성이 있는 속성들로만 구성되도록 분해하여 이상 현상이 발생하지 않는 바람직한 릴레이션으로 만들어 나가는 과정이다.
+* 함수 종속성을 이용하여, 릴레이션을 연관성이 있는 속성들로만 구성되도록 분해하여 이상 현상이 발생하지 않는 바람직한 릴레이션으로 만들어 나가는 과정이다. 또는 이상 현상을 제거하면서 데이터베이스를 올바르게 설계해 나가는 과정이라고도 한다.
 
-## ★ OLTP (Online transaction processing)
+## :mega: OLTP (Online transaction processing)
 
 <p align="center">
  <img src="https://kr.clustrix.com/wp-content/uploads/2017/06/OLTP-vs-OLAP.jpg" />
 </p>
 
-**네트워크상의 여러 이용자가 실시간으로 데이터베이스의 데이터를 갱신하거나 조회하는 등의 단위 작업을 처리하는 방식**을 말한다. 주로 신용카드 조회 업무나 자동 현금 지급 등 금융 전산 관련 부문에서 많이 발생하기 때문에 ‘온라인 거래처리’라고도 한다. 이 방식의 특징은 기존 컴퓨터 통신에서 이용해 온 온라인 방식과 달리 다수의 이용자가 거의 동시에 이용할 수 있도록 송수신 자료를 트랜잭션(데이터 파일의 내용에 영향을 미치는 거래 ·입출고 ·저장 등의 단위 행위) 단위로 압축, 비어 있는 공간을 다른 사용자들이 함께 쓸 수 있도록 한 점이다.
+**네트워크상의 여러 이용자가 실시간으로 데이터베이스의 데이터를 갱신하거나 조회하는 등의 단위 작업을 처리하는 방식**을 말한다. 주로 신용카드 조회 
+* 업무나 자동 현금 지급 등 금융 전산 관련 부문에서 많이 발생하기 때문에 ‘온라인 거래처리’라고도 한다. 이 방식의 특징은 기존 컴퓨터 통신에서 이용해 온 온라인 방식과 달리 다수의 이용자가 거의 동시에 이용할 수 있도록 송수신 자료를 트랜잭션(데이터 파일의 내용에 영향을 미치는 거래 ·입출고 ·저장 등의 단위 행위) 단위로 압축, 비어 있는 공간을 다른 사용자들이 함께 쓸 수 있도록 한 점이다.
 
-## ★ ORM (Object-relational mapping)
-데이터베이스와 객체 지향 프로그래밍 언어 간의 호환되지 않는 데이터를 변환하는 프로그래밍 기법이다. 객체 관계 매핑 라고도 부른다. 객체 지향 언어에서 사용할 수 있는 "가상" 객체 데이터베이스를 구축하는 방법이다.
+## :mega: ORM (Object-relational mapping)
 
-## ★ Realtional Database (관계형 데이터베이스)
+* 데이터베이스와 객체 지향 프로그래밍 언어 간의 호환되지 않는 데이터를 변환하는 프로그래밍 기법이다. 객체 관계 매핑 라고도 부른다. 객체 지향 언어에서 사용할 수 있는 "가상" 객체 데이터베이스를 구축하는 방법이다.
+
+## :mega: Realtional Database (관계형 데이터베이스)
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/20036523/46255549-2b684080-c4d9-11e8-89dc-03c44c4f2617.jpg" />
