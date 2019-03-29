@@ -2,70 +2,71 @@
 
 * This course introduces the fundaemental concepts necessary for designing, using and implementing database systems and database applications. In this course, we learn the fundaementals of database modeling and design, the languages and models provided by the database management systems (DBMSes), and database system implementation techniques. The main goal of this course is to give you in-depth and up-to-date knowledge of of the most important aspects of database systems and applications. Specifically, the major topics of this course is as follows: (1) logical design (relational, semi-structural, NoSQL), (2) DBMS installation and plays, (3) SQL, (4) JDBC programming, (5) indexing, (6) transaction processing, (7) web server programming, and (8) up-to-date technologies including Big Data, MapReduce and Hadoop/Spark if time permits. Through strong lab practices and programming assignments, the students are expected to be more familiar with data management.
 
-## ★ Syllabus for lecture
+## :mega: Syllabus for lecture
 
 |Syllabus Image 001|Syllabus Image 002|Syllabus Image 003|
 |:----------------:|:----------------:|:----------------:|
 |![](https://user-images.githubusercontent.com/20036523/46244210-56d62700-c416-11e8-84ec-1ae2655586fe.jpg)|![](https://user-images.githubusercontent.com/20036523/46244211-56d62700-c416-11e8-8263-6537abaea053.jpg)|![](https://user-images.githubusercontent.com/20036523/46244209-56d62700-c416-11e8-8892-756210071a17.jpg)|
 
-#### # DATABASE Feature (데이터베이스 특징)
+#### :key: 데이터베이스의 특징 (Database Feature)
 
 체계화된 데이터의 모임이다. 즉, 작성된 목록으로써 여러 응용 시스템들의 통합 된 정보들을 저장하여 운영할 수 있는 공용 데이터들의 묶음이다.
 
-* 공용 데이터 (Shared Data) : 다양한 사용자들이 필요한 정보를 공동으로 이용할 목적으로 만들어진 자료이다.
+* :one: 공용 데이터 (Shared Data) : 다양한 사용자들이 필요한 정보를 공동으로 이용할 목적으로 만들어진 자료이다.
 
-* 운영 데이터 (Operational Data) : 한 조직체가 유지되고 운영되는데 필요한 모든 개체 데이터와 관계 데이터의 집합이다.
+* :two: 운영 데이터 (Operational Data) : 한 조직체가 유지되고 운영되는데 필요한 모든 개체 데이터와 관계 데이터의 집합이다.
 
-* 통합 데이터 (Integrated Data) : 데이터 집단에서 자료의 중복이나 군더더기를 제거하여 최적화시킨 데이터의 집합이다.
+* :three: 통합 데이터 (Integrated Data) : 데이터 집단에서 자료의 중복이나 군더더기를 제거하여 최적화시킨 데이터의 집합이다.
 
-* 저장 데이터 (Stored Data) : 컴퓨터 시스템이 접근 가능한 저장 매체에 저당 된 데이터의 집합이다.
+* :four: 저장 데이터 (Stored Data) : 컴퓨터 시스템이 접근 가능한 저장 매체에 저당 된 데이터의 집합이다.
 
-* * *
+* :five: 실시간 접근성 (Real-Time Accessibility) : 수시적이고 비정형적인 질의(query)에 대하여 실시간 처리로 응답할 수 있어야 한다.
 
-* 실시간 접근성 (Real-Time Accessibility) : 수시적이고 비정형적인 질의(query)에 대하여 실시간 처리로 응답할 수 있어야 한다.
+* :six: 지속적인 변화 (Continuous Evolution) : 새로운 데이터의 삽입(insertion), 기존 데이터의 삭제(deletion), 갱신(update)으로 항상 그 내용이 변하고, 또 그 속에서 현재의 정확한 데이터를 유지해야 한다.
 
-* 지속적인 변화 (Continuous Evolution) : 새로운 데이터의 삽입(insertion), 기존 데이터의 삭제(deletion), 갱신(update)으로 항상 그 내용이 변하고, 또 그 속에서 현재의 정확한 데이터를 유지해야 한다.
+* :seven: 동시 공유 (Concurrent Sharing) : 같은 내용의 데이터를 여러 사람이 서로 다른 방법으로 동시에 공용할 수 있어야 한다.
 
-* 동시 공유 (Concurrent Sharing) : 같은 내용의 데이터를 여러 사람이 서로 다른 방법으로 동시에 공용할 수 있어야 한다.
+* :eight: 내용에 대한 참조 (Contents Reference) : 데이터베이스 내에 있는 데이터 레코드들은 주소나 위치에 의해서가 아니라 사용자가 요구하는 데이터의 내용에 따라 참조해야 한다.
 
-* 내용에 대한 참조 (Contents Reference) : 데이터베이스 내에 있는 데이터 레코드들은 주소나 위치에 의해서가 아니라 사용자가 요구하는 데이터의 내용에 따라 참조해야 한다.
-
-#### # DATABASE Advantage / Disadvantage (데이터베이스의 장점과 단점)
-|DATABASE Advantage|DATABASE Disadvantage|
-|------------------|---------------------|
+#### :key: 데이터베이스의 장점과 단점 (Database Advantage And Disadvantage)
+|:thumbsup: DATABASE Advantage|:thumbsdown: DATABASE Disadvantage|
+|-----------------------------|----------------------------------|
 |데이터 중복 최소화|데이터베이스 전문가 필요|
 |데이터공유|많은 비용 부담|
 |일관성, 무결성, 보안성 유지|데이터 백업과 복구가 어려움|
 |데이터의 논리적, 물리적 독리성|대용량 디스크로 엑서스가 집중되면 과부하 발생|
 |데이터 저장 공간 절약|시스템의 복잡함|
 
-## ★ DATABASE Structure (데이터베이스 구조)
+## :mega: 데이터베이스 구조 (Database Structure)
 
-* 논리적 구조 : 사용자나 응용 프로그래머가 데이터베이스를 바라보는 관점에서 데이터 배치 형태를 의미하는 것으로 논리적 레코드를 가지고 사용자나 응용 프로그래머의 상상에 따라 전개한 모양을 의미한다.
+* 논리적 구조 : **사용자나 응용 프로그래머가 데이터베이스를 바라보는 관점에서 데이터 배치 형태를 의미**하는 것으로 논리적 레코드를 가지고 사용자나 응용 프로그래머의 상상에 따라 전개한 모양을 의미한다.
 
-* 물리적 구조 : 데이터가 물리적 저장 장치에 배치된 형태를 의미하는 것으로 저장 레코드를 이용하여 실제 물리적 저장 장치 위에 전개한 모양을 의미한다.
+* 물리적 구조 : **데이터가 물리적 저장 장치에 배치된 형태를 의미**하는 것으로 저장 레코드를 이용하여 실제 물리적 저장 장치 위에 전개한 모양을 의미한다.
 
-## ★ DATABASE Data Independence
+## :mega: 데이터베이스 독립성 (Database Data Independence)
 
-#### # 논리적 데이터 독립성 (Logical Data Independence) - 응용 프로그램과 데이터베이스를 독립시키는 것이다. 즉, 개념 스키마가 변겨오디더라도 외부 스키마가 영향을 받지 않는다.
+#### :key: 논리적 데이터 독립성 (Logical Data Independence) - 응용 프로그램과 데이터베이스를 독립시키는 것이다. 즉, 개념 스키마가 변경이 되더라도 외부 스키마가 영향을 받지 않는다.
 
 * Logical data is data about database, that is, it stores information about how data is managed inside. For example, a table (relation) stored in the database and all its constraints, applied on that relation.
 
 * Logical data independence is a kind of mechanism, which liberalizes itself from actual data stored on the disk. If we do some changes on table format, it should not change the data residing on the disk.
 
-#### # 물리적 데이터 독립성 (Physical Data Independence) - 응용 프로그램 기억장치와 같은 물리적 장치를 독립시키는 것이다. 즉, 내부 스키마가 변경되더라도 개념
+#### :key: 물리적 데이터 독립성 (Physical Data Independence) - 응용 프로그램 기억장치와 같은 물리적 장치를 독립시키는 것이다. 즉, 내부 스키마가 변경되더라도 개념 스키마가 영향을 받지 않는다.
 
 * All the schemas are logical, and the actual data is stored in bit format on the disk. Physical data independence is the power to change the physical data without impacting the schema or logical data.
 
 * For example, in case we want to change or upgrade the storage system itself − suppose we want to replace hard-disks with SSD − it should not have any impact on the logical data or schemas.
 
-## ★ DATABASE MANAGEMENT SYSTEM (DBMS)
-* The database management system (DBMS) is the software that interacts with end users, applications, and the database itself to capture and analyze data. A general-purpose DBMS allows the definition, creation, querying, update, and administration of databases. A database is generally stored in a DBMS-specific format which is not portable, but different DBMSs can share data by using standards such as SQL and ODBC or JDBC. The sum total of the database, the DBMS and its associated applications can be referred to as a "database system". Often the term "database" is used to loosely refer to any of the DBMS, the database system or an application associated the database.
+## :mega: 데이터베이스 관리 시스템 (DBMS, DATABASE MANAGEMENT SYSTEM) - [[네이버 지식백과] 데이터베이스 관리 시스템 (컴퓨터 개론, 2013. 3. 10., 김종훈, 김종진)](https://terms.naver.com/entry.nhn?docId=2270449&cid=51173&categoryId=51173)
 
 * 데이터베이스 관리 시스템(영어: database management system, DBMS)은 **다수의 사용자들이 데이터베이스 내의 데이터를 접근할 수 있도록 해주는 소프트웨어 도구의 집합**이다. DBMS은 **사용자 또는 다른 프로그램의 요구를 처리하고 적절히 응답하여 데이터를 사용할 수 있도록 해준다.**
 
-|DBMS Function|Explanation|
-|:-----------:|:---------:|
+* 데이터베이스를 직접 응용 프로그램들이 조작하는 것이 아니라 데이터베이스를 조작하는 별도의 소프트웨어가 있는데 이를 데이터베이스 관리 시스템(DBMS : DataBase Management System)이라 한다. 즉 데이터베이스 관리 시스템이란 데이터베이스를 관리하며 응용 프로그램들이 데이터베이스를 공유하며 사용할 수 있는 환경을 제공하는 소프트웨어다. 
+
+* The database management system (DBMS) is the software that interacts with end users, applications, and the database itself to capture and analyze data. A general-purpose DBMS allows the definition, creation, querying, update, and administration of databases. A database is generally stored in a DBMS-specific format which is not portable, but different DBMSs can share data by using standards such as SQL and ODBC or JDBC. The sum total of the database, the DBMS and its associated applications can be referred to as a "database system". Often the term "database" is used to loosely refer to any of the DBMS, the database system or an application associated the database.
+
+|:point_right: DBMS Function Type|:clap: Explanation|
+|:------------------------------:|:----------------:|
 |정의|데이터에 대한 형식, 구조, 제약조건들을 명세하는 기능이다. 이때 데이터베이스에 대한 정의 및 설명은 카탈로그나 사전의 형태로 저장된다.|
 |구축|DBMS가 관리하는 기억 장치에 데이터를 저장하는 기능이다.|
 |조작|특정한 데이터를 검색하기 위한 질의, 데이터베이스의 갱신, 보고서 생성 기능 등을 포함한다.|
@@ -73,9 +74,9 @@
 |보호|하드웨어나 소프트웨어의 오동작 또는 권한이 없는 악의적인 접근으로부터 시스템을 보호한다.|
 |유지보수|시간이 지남에 따라 변화하는 요구사항을 반영할 수 있도록 하는 기능이다.|
 
-## ★ DATABASE Language
+## :mega: 데이터베이스 언어 (Database Language)
 
-#### # DML (Data Manipulation Language) - SELECT, INSERT, UPDATE, DELETE
+#### :key: DML (Data Manipulation Language) - SELECT, INSERT, UPDATE, DELETE
 데이터 조작 언어(영어: Data Manipulation Language, DML)은 **데이터베이스 사용자 또는 응용 프로그램 소프트웨어가 컴퓨터 데이터베이스에 대해 데이터 검색, 등록, 삭제, 갱신을 위한, 데이터베이스 언어 또는 데이터베이스 언어 요소**이다.
 
 ```SQL
@@ -98,7 +99,7 @@ UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;
 DELETE FROM table_name WHERE condition;
 ```
 
-#### # DDL (Data Definition Language) - CREATE, DROP, ALTER, TURNCATE
+#### :key: DDL (Data Definition Language) - CREATE, DROP, ALTER, TURNCATE
 데이터 정의 언어(영어: Data Definition Language, DDL)는 **컴퓨터 사용자 또는 응용 프로그램 소프트웨어가 컴퓨터의 데이터를 정의하는 컴퓨터 언어 또는 컴퓨터 언어 요소**이다.
 
 ```SQL
@@ -125,7 +126,7 @@ ALTER TABLE table_name DROP COLUMN column_name;
 ALTER TABLE table_name ALTER COLUMN column_name datatype;
 ```
 
-#### # DCL (Data Control Language) - GRANT, REVOKE
+#### :key: DCL (Data Control Language) - GRANT, REVOKE
 데이터 제어 언어(영어: Data Control Language, DCL)는 **데이터베이스에서 데이터에 대한 액세스를 제어하기 위한 데이터베이스 언어 또는 데이터베이스 언어 요소**이다. 권한 부여(GRANT)와 박탈(REVOKE)이 있으며, 설정할 수 있는 권한으로는 연결(CONNECT), 질의(SELECT), 자료 삽입(INSERT), 갱신(UPDATE), 삭제(DELETE) 등이 있다.
 
 ```SQL
@@ -136,27 +137,25 @@ REVOKE privilege_name ON object_name FROM {user_name |PUBLIC |role_name};
 GRANT privilege_name ON object_name TO {user_name |PUBLIC |role_name} [WITH GRANT OPTION];
 ```
 
-## ★ Data Modeling and Data Model - 데이터 모델링과 데이터 모델의 개념 (데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주))
+## :mega: Data Modeling and Data Model - 데이터 모델링과 데이터 모델의 개념 (데이터베이스 개론, 2013. 6. 30., 한빛아카데미(주))
 
-#### ※ Data Modeling 
+#### :key: 데이터 모델링 (Data Modeling)
 
 * 현실 세계에 존재하는 데이터를 컴퓨터의 세계의 데이터베이스로 옮기는 변환 과정이다.
 
-* 개념적 데이터 모델링 (Conceptual Data Modeling): 현실 세계의 중요 데이터를 추출하여 개념 세계로 옮기는 작업이다.
+* :one: 개념적 데이터 모델링 (Conceptual Data Modeling): 현실 세계의 중요 데이터를 추출하여 개념 세계로 옮기는 작업이다.
 
-* 논리적 데이터 모델링 (Logical Data Modeling): 개념 세계의 데이터를 데이터베이스에 저장하는 구조로 표현하는 작업이다.
+* :two: 논리적 데이터 모델링 (Logical Data Modeling): 개념 세계의 데이터를 데이터베이스에 저장하는 구조로 표현하는 작업이다.
 
-* * *
-
-#### ※ Data Model 
+#### :key: 데이터 모델 (Data Model)
 
 * 데이터 모델링의 결과물을 표현하는 도구이다.
 
-* 개념적 데이터 모델 (Coneptual Data Model): 현실 세계를 사람의 머미로 이해할 수 있도록 개념적 모델링의 결과물인 개념적 구조로 표현하는 도구다.
+* :one: 개념적 데이터 모델 (Coneptual Data Model): 현실 세계를 사람의 머리로 이해할 수 있도록 개념적 모델링의 결과물인 개념적 구조로 표현하는 도구다.
 
-* 논리적 데이터 모델 (Logical Data Model): 개념적 구조를 논리적 모델링하여 논리적 구조로 표현하는 도구이다.
+* :two: 논리적 데이터 모델 (Logical Data Model): 개념적 구조를 논리적 모델링하여 논리적 구조로 표현하는 도구이다.
 
-## ★ 개체-관계 다이어그램(Entity-Relationship Diagram)
+## :mega: 개체-관계 다이어그램(Entity-Relationship Diagram)
 
 * An Entity Relationship Diagram (ERD) is **a visual representation of different entities within a system and how they relate to each other.**
 
@@ -171,18 +170,13 @@ GRANT privilege_name ON object_name TO {user_name |PUBLIC |role_name} [WITH GRAN
 * [Ultimate ER Diagram Tutorial (Entity Relationship Diagrams)](https://creately.com/blog/diagrams/er-diagrams-tutorial/)
 * [Entity-Relationship Diagram Symbols and Notation](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
 
-## ★ DATABASE System Catalog - System Catalog - 시스템 카탈로그 (지형 공간정보체계 용어사전, 2016. 1. 3., 구미서관)
+## :mega: 시스템 카탈로그 (System Catalog) - 지형 공간정보체계 용어사전, 2016. 1. 3., 구미서관
+
+* **시스템이 필요로 하는 데이터베이스, 테이블, 뷰, 인덱스, 접근 권한 등에 관한 정보를 메타 데이터 형태로 포함하는 시스템 데이터베이스**이다. 사용자가 SQL 문을 실행시켜 기본 테이블, 뷰, 인덱스 등에 변화를 주면 시스템 카탈로그가 자동으로 테이블을 갱신한다. 카탈로그 자체도 시스템 테이블로 구성되어있어 **일반 이용자도 SQL을 이용하여 내용을 검색해볼 수 있으나 카탈로그의 내용을 삽입, 삭제, 갱신할 수 없다. 잘못될 경우 치명적인 오류를 초래하므로 사용자의 직접적인 접근을 허용하지 않는다.**
+
 * A system catalog is a group of tables and views that incorporate vital details regarding a database. Every database comprised of a system catalog and the information in the system catalog specifies the framework of the database. For instance, the data dictionary language (DDL) for every table in the database is saved in the system catalog.
 
-* 시스템이 필요로 하는 데이터베이스, 테이블, 뷰, 인덱스, 접근 권한 등에 관한 정보를 메타 데이터 형태로 포함하는 시스템 데이터베이스이다. 
-
-* 사용자가 SQL 문을 실행시켜 기본 테이블, 뷰, 인덱스 등에 변화를 주면 시스템 카탈로그가 자동으로 테이블을 갱신한다. 카탈로그 자체도 시스템 테이블로 구성되어있어 일반 이용자도 SQL을 이용하여 내용을 검색해볼 수 있으나 카탈로그의 내용을 삽입, 삭제, 갱신할 수 없다. 잘못될 경우 치명적인 오류를 초래하므로 사용자의 직접적인 접근을 허용하지 않는다. 
-
-> ＆ 메타는 ‘근원적인 정의 또는 설명’을 의미하는 접두사이다. 따라서 메타 데이터(Meta data)는 데이터에 대한 정의 또는 설명을 말한다. 
-
-> ＆ 데이터 디렉토리(Data Directory)는 시스템 카탈로그라는 시스템 데이터베이스에 수록된 데이터에 실제로 접근할 때 필요한 정보를 관리하고 유지하는 시스템이다.
-
-## ★ DATABASE VIEW
+## :mega: 뷰 (VIEW)
 
 In a database, a view is the result set of a stored query on the data, which the database users can query just as they would in a persistent database collection object. This pre-established query command is kept in the database dictionary. Unlike ordinary base tables in a relational database, a view does not form part of the physical schema: as a result set, it is a virtual table computed or collated dynamically from data in the database when access to that view is requested. Changes applied to the data in a relevant underlying table are reflected in the data shown in subsequent invocations of the view. In some NoSQL databases, views are the only way to query data.
 
