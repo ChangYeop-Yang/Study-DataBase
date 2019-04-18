@@ -485,13 +485,13 @@ NoSQL 데이터베이스는 탁월한 사용자 경험을 제공하기 위하여
 
 * 데이터에 대한 저장과 처리가 동시에 일어날 수 있다. 입력채널이 첫 번째 버퍼에 데이터를 저장하는 동안 프로세서가 두 번째 버퍼의 데이터를 처리할 수 있는 것이다. 이렇게 두개의 버퍼를 서로 교대로 사용하는 것을 플립플롭버퍼링(flip-flop buffering)이라하고, 여러개의 버퍼를 번갈아 사용하는 것을 순환버퍼링(circular buffering)이라고 한다.
 
-## :mega: 복수 배열 독립 디스크(Redundant Array of Independent Disks 혹은 Redundant Array of Inexpensive Disks)
+## :mega: 복수 배열 독립 디스크 (Redundant Array of Independent Disks 혹은 Redundant Array of Inexpensive Disks)
 
 * 여러 개의 하드 디스크에 일부 중복된 데이터를 나눠서 저장하는 기술이다. 디스크 어레이(disk array)라고도 한다. 데이터를 나누는 다양한 방법이 존재하며, 이 방법들을 레벨이라 하는데, 레벨에 따라 저장장치의 신뢰성을 높이거나 전체적인 성능을 향상시키는 등의 다양한 목적을 만족시킬 수 있다.
 
 * RAID는 여러 개의 디스크를 하나로 묶어 하나의 논리적 디스크로 작동하게 하는데, 하드웨어적인 방법과 소프트웨어적인 방법이 있다. 하드웨어적인 방법은 운영 체제에 이 디스크가 하나의 디스크처럼 보이게 한다. 소프트웨어적인 방법은 주로 운영체제 안에서 구현되며, 사용자에게 디스크를 하나의 디스크처럼 보이게 한다.
 
-##### :key: RAID LEVEL
+##### :key: RAID (Redundant Array of Independent Disks) LEVEL
 
 |RAID 0|RAID 1|RAID 2|RAID 3|RAID 4|
 |:----:|:----:|:----:|:----:|:----:|
