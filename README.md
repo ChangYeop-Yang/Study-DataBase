@@ -493,6 +493,10 @@ NoSQL 데이터베이스는 탁월한 사용자 경험을 제공하기 위하여
 
 ##### :key: RAID LEVEL
 
+|📷 RAID 0|📷 RAID 1|📷 RAID 2|📷 RAID 3|📷 RAID 4|
+|:--------:|:-------:|:-------:|:--------:|:--------:|
+|![](https://k.kakaocdn.net/dn/GlJDx/btquDW2yNFt/tr31VECYc5KHn51yTiZGZ0/img.png)|![](https://k.kakaocdn.net/dn/pYo1y/btquCZzbpzF/KqeOQZii2eWQGyzvPYMaR1/img.png)|![](https://k.kakaocdn.net/dn/bn5245/btquEPPqofl/GmyLWbwkB0a5SmtKtE7R60/img.png)|![](https://k.kakaocdn.net/dn/dqE7ev/btquDtfHbUk/VgOtGJPMwSkn55uBHtnRFk/img.png)|![](https://k.kakaocdn.net/dn/bJRddT/btquCZ600F1/xh9GhoKRk1HaKmJtjHUeOk/img.png)|
+
 * RAID 0: 빠른 데이터 입출력을 위해 데이터 스트라이핑을 제공한다.
 
 * RAID 1: 데이터의 안정성을 위하여 미러링을 제공한다. 가용 용량은 절반으로 줄어든다.
